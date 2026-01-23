@@ -1,0 +1,24 @@
+{
+    "title": "Tutoriel Interactif",
+    "welcome": "Bienvenue au cours! Découvrons l'interface.",
+    "step_indicator": "de",
+    "steps": {
+        "s1": "📋 <strong>Menu Latéral</strong><br>Vous trouverez ici tous les modules et pages du cours. Cliquez sur le titre d'un module pour le développer ou le réduire.",
+        "s2": "🧠 <strong>Menu de Fixation</strong><br>Après avoir terminé les modules, accédez à des activités supplémentaires pour renforcer votre apprentissage: résumés, questionnaires, flashcards et plus encore!",
+        "s3": "☰ <strong>Réduire Menu</strong><br>Cliquez ici pour réduire ou développer le menu latéral, donnant plus d'espace au contenu.",
+        "s4": "⚙️ <strong>Paramètres</strong><br>Ouvrez pour personnaliser: mode sombre, taille de police, vitesse de voix et langue.",
+        "s5": "📖 <strong>Assistance de Lecture</strong><br>Activez pour améliorer la lisibilité avec un espacement plus grand entre les lettres et les lignes.",
+        "s6": "🔄 <strong>Lecture Automatique</strong><br>Lorsqu'elle est activée, le contenu sera lu automatiquement lors du chargement de chaque page.",
+        "s7": "🎤 <strong>Voix de Lecture</strong><br>Choisissez la voix que vous préférez pour la lecture. Les voix avec ⭐ sont recommandées pour une meilleure qualité.",
+        "s8": "🔊 <strong>Lecture de Page</strong><br>Cliquez sur le bouton pour écouter le contenu. Utilisez le contrôle du volume à côté pour ajuster.",
+        "s9": "👆 <strong>Éléments Interactifs</strong><br>Tout au long du cours, des éléments comme celui-ci qui <em>tremblent</em> sont cliquables! Cliquez dessus pour révéler du contenu supplémentaire.",
+        "s10": "➡️ <strong>Navigation</strong><br>Utilisez \"Précédent\" et \"Suivant\" pour naviguer entre les pages du cours.",
+        "s11": "⌨️ <strong>Raccourcis Clavier</strong><br>Vous pouvez également naviguer avec le clavier:<br>• <kbd>←</kbd> Page précédente<br>• <kbd>→</kbd> Page suivante<br>• <kbd>Esc</kbd> Fermer popups<br>• <kbd>M</kbd> Ouvrir/fermer menu<br>• <kbd>?</kbd> Voir raccourcis"
+    },
+    "buttons": {
+        "next": "Suivant →",
+        "previous": "← Précédent",
+        "skip": "Sauter",
+        "finish": "Terminer ✓"
+    }
+}

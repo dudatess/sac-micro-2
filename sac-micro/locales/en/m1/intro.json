@@ -1,0 +1,64 @@
+{
+    "hero": {
+        "welcome": "Welcome to the course",
+        "title": "SAC Communication Channels",
+        "subtitle": "Learn about the main service channels and their flows to provide an exceptional customer experience.",
+        "badge": "✨ SAC Training"
+    },
+    "stats": {
+        "channels": "Channels",
+        "module": "Module",
+        "exercise": "Exercise"
+    },
+    "journey": {
+        "title": "Learning Journey",
+        "redes": {
+            "title": "Social Media",
+            "desc": "Facebook, Instagram and X - monitoring and customer response.",
+            "tag": "Digital"
+        },
+        "lojas": {
+            "title": "Stores",
+            "desc": "Collaborative service between store and SAC for in-person requests.",
+            "tag": "In-Person"
+        },
+        "pessoal": {
+            "title": "Personal Service",
+            "desc": "IVR, intercom and direct support in the parking lot.",
+            "tag": "Immediate"
+        },
+        "site": {
+            "title": "Website",
+            "desc": "Contact Us forms with automatic case creation.",
+            "tag": "Online"
+        },
+        "app": {
+            "title": "App",
+            "desc": "Requests through the app with structured tracking.",
+            "tag": "Mobile"
+        },
+        "email": {
+            "title": "Email",
+            "desc": "Direct email contact with complete traceability.",
+            "tag": "Formal"
+        }
+    },
+    "exercise": {
+        "title": "Exercise",
+        "flow": {
+            "title": "Build the Flow",
+            "desc": "Order the steps of each service channel in the correct sequence.",
+            "tag": "Practice"
+        }
+    },
+    "demo": {
+        "title": "Interactive Element",
+        "text": "Click on shaking elements to reveal more information!"
+    },
+    "cta": {
+        "title": "First time here?",
+        "desc": "Discover the accessibility features and learn how to navigate the platform.",
+        "btn": "▶ Start Tutorial"
+    },
+    "start_msg": "Please click on <strong>\"Start Tutorial\"</strong> before continuing."
+}

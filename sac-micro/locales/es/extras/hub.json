@@ -1,0 +1,33 @@
+{
+    "title": "Menú de Ejercicios",
+    "lead": "Esta es la plantilla del hub de ejercicios. Agrega los ejercicios de tu curso aquí.",
+    "about": {
+        "title": "Sobre esta plantilla",
+        "text": "Usa esta página como menú central para los ejercicios.<br><br>Los estudiantes pueden acceder a diferentes tipos de actividades desde aquí."
+    },
+    "available": {
+        "title": "Tipos de ejercicios disponibles:"
+    },
+    "types": {
+        "quiz": {
+            "title": "Cuestionarios",
+            "text": "Copia de template-system/core/templates/exercises/quiz.html"
+        },
+        "flashcards": {
+            "title": "Flash Cards",
+            "text": "Copia de template-system/core/templates/exercises/flashcards.html"
+        },
+        "dragdrop": {
+            "title": "Arrastrar y Soltar",
+            "text": "Copia de template-system/core/templates/exercises/drag-drop.html"
+        },
+        "roleplay": {
+            "title": "Roleplay",
+            "text": "Copia de template-system/core/templates/exercises/roleplay.html"
+        }
+    },
+    "tip": {
+        "title": "Para agregar ejercicios",
+        "text": "1. Copia la plantilla de <code>template-system/core/templates/exercises/</code><br>2. Pega en <code>paginas/pt/</code><br>3. Agrega en <code>content.json</code> en la sección extras"
+    }
+}

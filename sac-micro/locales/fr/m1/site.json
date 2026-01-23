@@ -1,0 +1,40 @@
+{
+    "title": "🌐 Site Web",
+    "lead": "Lorsqu'un client nous contacte via les formulaires disponibles sur le site (comme Contactez-nous, Suggestions ou Réclamations), le service est automatiquement généré dans Salesforce.",
+    "auto": {
+        "title": "Processus Automatique",
+        "text": "Le remplissage du formulaire crée un cas dans le système sans nécessité d'ouverture manuelle."
+    },
+    "flow": {
+        "title": "Flux de Service",
+        "step1": {
+            "title": "Création Automatique",
+            "text": "Le client remplit le formulaire sur le site et un cas est automatiquement créé dans Salesforce."
+        },
+        "step2": {
+            "title": "Triage du SAC",
+            "text": "Le service passe au Triage du SAC, responsable de classer et orienter le cas."
+        }
+    },
+    "triagem": {
+        "title": "Le Triage du SAC est responsable de :",
+        "item1": "Classer le sujet de la demande",
+        "item2": "Orienter vers le service responsable si nécessaire (carte, parking, magasin, IT)",
+        "item3": "Répondre au client lorsque la solution est dans le périmètre du SAC"
+    },
+    "highlight": {
+        "title": "Avantage",
+        "text": "Ce flux garantit organisation, traitement rapide et traçabilité complète du service."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Question :</strong> Comment le service est-il créé lorsque le client utilise le formulaire du site ?",
+            "options": {
+                "a": "Manuellement par l'opérateur",
+                "b": "Automatiquement dans Salesforce",
+                "c": "Par l'équipe des Réseaux Sociaux"
+            },
+            "feedback": "<strong>Correct !</strong> Le remplissage du formulaire crée automatiquement un cas dans Salesforce sans nécessité d'ouverture manuelle."
+        }
+    }
+}

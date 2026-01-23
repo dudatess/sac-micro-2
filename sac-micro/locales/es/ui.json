@@ -1,0 +1,31 @@
+{
+    "sidebar": {
+        "title": "Dentro del SAC",
+        "toggle_menu": "Alternar menú",
+        "progress": "Progreso"
+    },
+    "header": {
+        "guided_reading": "🔊 Lectura guiada",
+        "activate_reading_hint": "¡Activa la lectura aquí!"
+    },
+    "navigation": {
+        "next": "Siguiente",
+        "previous": "Anterior",
+        "complete": "Concluir",
+        "skip": "Saltar"
+    },
+    "buttons": {
+        "start": "Iniciar",
+        "continue": "Continuar",
+        "finish": "Finalizar",
+        "back": "Volver",
+        "close": "Cerrar",
+        "save": "Guardar",
+        "cancel": "Cancelar"
+    },
+    "messages": {
+        "loading": "Cargando...",
+        "error": "Ocurrió un error. Intente nuevamente.",
+        "success": "¡Operación realizada con éxito!"
+    }
+}

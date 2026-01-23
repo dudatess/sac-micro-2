@@ -1,0 +1,13 @@
+{
+    "title": "⚙️ Configuraciones",
+    "dark_mode": "Modo Oscuro",
+    "font_size": "Tamaño de Fuente",
+    "reading_assistance": "Asistencia de Lectura",
+    "auto_read": "Lectura Automática",
+    "reading_speed": "Velocidad de Lectura",
+    "reading_voice": "Voz de Lectura",
+    "loading_voices": "Cargando voces...",
+    "test_voice": "▶ Probar",
+    "language": "Idioma",
+    "close": "Cerrar"
+}

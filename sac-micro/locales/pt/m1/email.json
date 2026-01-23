@@ -1,0 +1,40 @@
+{
+    "title": "✉️ E-mail",
+    "lead": "Quando o cliente envia um e-mail diretamente para o endereço do Fale Conosco, o atendimento é registrado automaticamente na Salesforce.",
+    "auto": {
+        "title": "Registro Automático",
+        "text": "O e-mail recebido gera um caso automaticamente no sistema."
+    },
+    "flow": {
+        "title": "Fluxo de Atendimento",
+        "step1": {
+            "title": "Abertura do Caso",
+            "text": "O e-mail do cliente é recebido e um caso é criado automaticamente na Salesforce."
+        },
+        "step2": {
+            "title": "Triagem do SAC",
+            "text": "O atendimento passa pela Triagem do SAC para classificação e direcionamento."
+        }
+    },
+    "sac": {
+        "title": "O SAC fica responsável por:",
+        "item1": "Identificar e classificar o tipo de solicitação",
+        "item2": "Direcionar para a área responsável, quando necessário",
+        "item3": "Realizar o retorno ao cliente quando a tratativa estiver dentro do escopo do SAC"
+    },
+    "highlight": {
+        "title": "Benefício",
+        "text": "Esse processo assegura que todas as solicitações recebidas por e-mail sejam tratadas de forma padronizada e acompanhadas do início ao fim."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Questão:</strong> Qual é a principal vantagem do fluxo de atendimento por e-mail?",
+            "options": {
+                "a": "Resposta imediata ao cliente",
+                "b": "Contato direto com o gerente",
+                "c": "Tratamento padronizado e rastreabilidade completa"
+            },
+            "feedback": "<strong>Correto!</strong> O fluxo por e-mail assegura tratamento padronizado e acompanhamento do início ao fim."
+        }
+    }
+}

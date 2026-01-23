@@ -1,0 +1,13 @@
+{
+    "title": "⚙️ Settings",
+    "dark_mode": "Dark Mode",
+    "font_size": "Font Size",
+    "reading_assistance": "Reading Assistance",
+    "auto_read": "Auto-Read",
+    "reading_speed": "Reading Speed",
+    "reading_voice": "Reading Voice",
+    "loading_voices": "Loading voices...",
+    "test_voice": "▶ Test",
+    "language": "Language",
+    "close": "Close"
+}

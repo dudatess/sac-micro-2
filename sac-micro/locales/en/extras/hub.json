@@ -1,0 +1,33 @@
+{
+    "title": "Exercises Menu",
+    "lead": "This is the exercises hub template. Add your course exercises here.",
+    "about": {
+        "title": "About this template",
+        "text": "Use this page as a central menu for exercises.<br><br>Students can access different types of activities from here."
+    },
+    "available": {
+        "title": "Available exercise types:"
+    },
+    "types": {
+        "quiz": {
+            "title": "Quizzes",
+            "text": "Copy from template-system/core/templates/exercises/quiz.html"
+        },
+        "flashcards": {
+            "title": "Flash Cards",
+            "text": "Copy from template-system/core/templates/exercises/flashcards.html"
+        },
+        "dragdrop": {
+            "title": "Drag and Drop",
+            "text": "Copy from template-system/core/templates/exercises/drag-drop.html"
+        },
+        "roleplay": {
+            "title": "Roleplay",
+            "text": "Copy from template-system/core/templates/exercises/roleplay.html"
+        }
+    },
+    "tip": {
+        "title": "To add exercises",
+        "text": "1. Copy the template from <code>template-system/core/templates/exercises/</code><br>2. Paste in <code>paginas/pt/</code><br>3. Add in <code>content.json</code> in the extras section"
+    }
+}

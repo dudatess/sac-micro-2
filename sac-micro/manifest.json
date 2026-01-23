@@ -1,0 +1,29 @@
+{
+    "name": "Canais de Comunicação SAC",
+    "short_name": "SAC Canais",
+    "description": "Treinamento sobre os canais de comunicação do SAC - Grupo Zaffari",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#FFA000",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "assets/marca/mascote.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "assets/marca/mascote.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "categories": [
+        "education",
+        "business"
+    ]
+}

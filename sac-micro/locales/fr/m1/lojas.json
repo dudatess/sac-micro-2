@@ -1,0 +1,39 @@
+{
+    "title": "🏪 Magasins",
+    "lead": "Les services initiés directement dans les magasins suivent un flux collaboratif avec le SAC.",
+    "flow": {
+        "title": "Flux de Service",
+        "step1": {
+            "title": "Enregistrement en Magasin",
+            "text": "Le magasin enregistre le service dans le système (Salesforce) chaque fois qu'il identifie une demande nécessitant un suivi, une investigation ou un transfert vers un autre service."
+        },
+        "step2": {
+            "title": "Orientation vers le SAC",
+            "text": "La plupart de ces demandes sont orientées vers le SAC, qui prend en charge l'analyse du cas."
+        },
+        "step3": {
+            "title": "Réponse Finale",
+            "text": "Le SAC est responsable de garantir que la réponse soit claire, complète et dans les délais convenus, en enregistrant toujours les progrès dans le système."
+        }
+    },
+    "sac": {
+        "title": "Le SAC prend en charge :",
+        "item1": "L'analyse du cas",
+        "item2": "Le contact avec les services internes (financier, opérations, parking, cartes)",
+        "item3": "La réponse finale au client"
+    },
+    "highlight": {
+        "title": "Avantage",
+        "text": "Ce processus évite le travail en double et garantit que le client bénéficie d'une expérience unique et centralisée."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Vrai ou Faux :</strong> Le SAC est responsable de la réponse finale au client pour les services initiés dans les magasins.",
+            "options": {
+                "a": "Vrai",
+                "b": "Faux"
+            },
+            "feedback": "<strong>Correct !</strong> Le SAC garantit que la réponse soit claire, complète et dans les délais convenus."
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "title": "Bienvenue au Cours",
+    "lead": "Ceci est le modèle initial de votre cours. Remplacez ce contenu par les informations de votre cours.",
+    "tip": {
+        "title": "Comment utiliser ce modèle",
+        "text": "Modifiez le fichier <code>locales/fr/intro.json</code> pour changer les textes de cette page.<br><br>Pour ajouter des composants, copiez depuis <code>template-system/core/templates/components/</code>"
+    },
+    "topics": {
+        "title": "Ce que vous pouvez ajouter:",
+        "content": {
+            "title": "Pages de Contenu",
+            "text": "Copiez les modèles de template-system/core/templates/content/"
+        },
+        "components": {
+            "title": "Composants Interactifs",
+            "text": "Utilisez cards, accordions, flip cards et autres composants"
+        },
+        "exercises": {
+            "title": "Exercices",
+            "text": "Quiz, flashcards, drag-drop, roleplay et plus"
+        }
+    },
+    "edit": {
+        "title": "Pour personnaliser",
+        "text": "1. Modifiez <code>content.json</code> pour ajouter des pages<br>2. Modifiez les fichiers dans <code>locales/</code> pour les traductions<br>3. Copiez les modèles de <code>template-system/</code>"
+    }
+}

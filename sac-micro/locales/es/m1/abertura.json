@@ -1,0 +1,21 @@
+{
+    "title": "💻 Nuestro Sistema",
+    "lead": "Todos los procesos de atención que aprenderás en este curso se realizan a través de Salesforce, nuestra plataforma central de gestión de relaciones con el cliente.",
+    "highlight": {
+        "title": "¿Por qué Salesforce?",
+        "text": "Salesforce centraliza todas las atenciones en un solo lugar, garantizando trazabilidad, estandarización y agilidad en el tratamiento de cada demanda."
+    },
+    "channels": {
+        "title": "Canales que conocerás:",
+        "redes": "Redes Sociales",
+        "lojas": "Tiendas",
+        "pessoal": "Atención Personal",
+        "site": "Sitio Web",
+        "app": "App",
+        "email": "Correo Electrónico"
+    },
+    "cta": {
+        "title": "¿Listos para empezar?",
+        "text": "En las próximas páginas, aprenderás cómo funciona cada canal de comunicación y cómo utilizar el sistema para garantizar la mejor experiencia al cliente."
+    }
+}

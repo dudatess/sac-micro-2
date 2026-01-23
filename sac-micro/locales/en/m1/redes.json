@@ -1,0 +1,49 @@
+{
+    "title": "📱 Social Media",
+    "lead": "When a customer registers a complaint or request on social media (Facebook, Instagram, Twitter/X), the service follows a specific flow.",
+    "flow": {
+        "title": "Service Flow",
+        "step1": {
+            "title": "Monitoring",
+            "text": "The Social Media team monitors all customer mentions, comments, and private messages daily."
+        },
+        "step2": {
+            "title": "Ticket Creation",
+            "text": "When identifying a request, the team creates a ticket in Salesforce with all relevant case information."
+        },
+        "step3": {
+            "title": "Routing",
+            "text": "The ticket is routed to SAC or the Store, depending on the type of request."
+        },
+        "step4": {
+            "title": "Customer Response",
+            "text": "After handling, SAC records the response in Salesforce, ensuring that the Social Media team can respond to the customer on the same channel."
+        }
+    },
+    "directions": {
+        "title": "When to route to each area?",
+        "sac": {
+            "title": "Routed to SAC",
+            "text": "When it involves analysis, handling, customer response, or need for deeper contact."
+        },
+        "loja": {
+            "title": "Routed to Store",
+            "text": "When direct involvement of the manager is needed (e.g.: specific unit issues, physical occurrences, questions about local products)."
+        }
+    },
+    "highlight": {
+        "title": "Result",
+        "text": "This flow ensures speed and standardization in social media service."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Question:</strong> Who is responsible for responding to the customer on social media after SAC handles the case?",
+            "options": {
+                "a": "SAC itself",
+                "b": "The Social Media team",
+                "c": "The store manager"
+            },
+            "feedback": "<strong>Correct!</strong> The Social Media team responds to the customer on the same channel, using the information recorded by SAC in Salesforce."
+        }
+    }
+}

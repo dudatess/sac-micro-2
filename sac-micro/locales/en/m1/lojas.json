@@ -1,0 +1,39 @@
+{
+    "title": "🏪 Stores",
+    "lead": "Services initiated directly in stores follow a collaborative flow with SAC.",
+    "flow": {
+        "title": "Service Flow",
+        "step1": {
+            "title": "Store Registration",
+            "text": "The store registers the service in the system (Salesforce) whenever it identifies a request that requires follow-up, investigation, or forwarding to another area."
+        },
+        "step2": {
+            "title": "Routing to SAC",
+            "text": "Most of these requests are routed to SAC, which takes over the case analysis."
+        },
+        "step3": {
+            "title": "Final Response",
+            "text": "SAC is responsible for ensuring that the response is clear, complete, and within the agreed timeframe, always recording progress in the system."
+        }
+    },
+    "sac": {
+        "title": "SAC takes over:",
+        "item1": "Case analysis",
+        "item2": "Contact with internal areas (financial, operations, parking, cards)",
+        "item3": "Final response to the customer"
+    },
+    "highlight": {
+        "title": "Benefit",
+        "text": "This process avoids rework and ensures that the customer has a unique and centralized experience."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>True or False:</strong> SAC is responsible for the final response to customers in services initiated at stores.",
+            "options": {
+                "a": "True",
+                "b": "False"
+            },
+            "feedback": "<strong>Correct!</strong> SAC ensures that the response is clear, complete, and within the agreed timeframe."
+        }
+    }
+}

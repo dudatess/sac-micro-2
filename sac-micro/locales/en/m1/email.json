@@ -1,0 +1,40 @@
+{
+    "title": "✉️ Email",
+    "lead": "When a customer sends an email directly to the Contact Us address, the service is automatically registered in Salesforce.",
+    "auto": {
+        "title": "Automatic Registration",
+        "text": "The received email automatically generates a case in the system."
+    },
+    "flow": {
+        "title": "Service Flow",
+        "step1": {
+            "title": "Case Opening",
+            "text": "The customer's email is received and a case is automatically created in Salesforce."
+        },
+        "step2": {
+            "title": "SAC Screening",
+            "text": "The service goes through SAC Screening for classification and routing."
+        }
+    },
+    "sac": {
+        "title": "SAC is responsible for:",
+        "item1": "Identifying and classifying the type of request",
+        "item2": "Routing to the responsible area when necessary",
+        "item3": "Responding to the customer when the solution is within SAC's scope"
+    },
+    "highlight": {
+        "title": "Benefit",
+        "text": "This process ensures that all requests received by email are handled in a standardized way and tracked from start to finish."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Question:</strong> What is the main advantage of the email service flow?",
+            "options": {
+                "a": "Immediate response to the customer",
+                "b": "Direct contact with the manager",
+                "c": "Standardized handling and complete traceability"
+            },
+            "feedback": "<strong>Correct!</strong> The email flow ensures standardized handling and tracking from start to finish."
+        }
+    }
+}

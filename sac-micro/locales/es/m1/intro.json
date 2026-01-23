@@ -1,0 +1,64 @@
+{
+    "hero": {
+        "welcome": "Bienvenido al curso",
+        "title": "Canales de Comunicación SAC",
+        "subtitle": "Conoce los principales canales de atención y sus flujos para ofrecer una experiencia excepcional al cliente.",
+        "badge": "✨ Capacitación SAC"
+    },
+    "stats": {
+        "channels": "Canales",
+        "module": "Módulo",
+        "exercise": "Ejercicio"
+    },
+    "journey": {
+        "title": "Jornada de Aprendizaje",
+        "redes": {
+            "title": "Redes Sociales",
+            "desc": "Facebook, Instagram y X - monitoreo y respuesta al cliente.",
+            "tag": "Digital"
+        },
+        "lojas": {
+            "title": "Tiendas",
+            "desc": "Atención colaborativa entre tienda y SAC para demandas presenciales.",
+            "tag": "Presencial"
+        },
+        "pessoal": {
+            "title": "Atención Personal",
+            "desc": "IVR, intercomunicador y soporte directo en el estacionamiento.",
+            "tag": "Inmediato"
+        },
+        "site": {
+            "title": "Sitio Web",
+            "desc": "Formularios de Contáctenos con creación automática de casos.",
+            "tag": "Online"
+        },
+        "app": {
+            "title": "App",
+            "desc": "Solicitudes por la aplicación con seguimiento estructurado.",
+            "tag": "Móvil"
+        },
+        "email": {
+            "title": "Correo Electrónico",
+            "desc": "Contacto directo por correo con rastreabilidad completa.",
+            "tag": "Formal"
+        }
+    },
+    "exercise": {
+        "title": "Ejercicio",
+        "flow": {
+            "title": "Arma el Flujo",
+            "desc": "Ordena los pasos de cada canal de atención en la secuencia correcta.",
+            "tag": "Práctica"
+        }
+    },
+    "demo": {
+        "title": "Elemento Interactivo",
+        "text": "¡Haz clic en los elementos que tiemblan para revelar más información!"
+    },
+    "cta": {
+        "title": "¿Primera vez aquí?",
+        "desc": "Descubre los recursos de accesibilidad y aprende a navegar por la plataforma.",
+        "btn": "▶ Iniciar Tutorial"
+    },
+    "start_msg": "Por favor, haz clic en <strong>\"Iniciar Tutorial\"</strong> antes de continuar."
+}

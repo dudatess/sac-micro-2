@@ -1,0 +1,49 @@
+{
+    "title": "📱 Réseaux Sociaux",
+    "lead": "Lorsqu'un client enregistre une réclamation ou une demande sur les réseaux sociaux (Facebook, Instagram, Twitter/X), le service suit un flux spécifique.",
+    "flow": {
+        "title": "Flux de Service",
+        "step1": {
+            "title": "Surveillance",
+            "text": "L'équipe des Réseaux Sociaux surveille quotidiennement toutes les mentions, commentaires et messages privés des clients."
+        },
+        "step2": {
+            "title": "Création du Ticket",
+            "text": "Lorsqu'elle identifie une demande, l'équipe crée un ticket dans Salesforce avec toutes les informations pertinentes du cas."
+        },
+        "step3": {
+            "title": "Orientation",
+            "text": "Le ticket est orienté vers le SAC ou le Magasin, selon le type de demande."
+        },
+        "step4": {
+            "title": "Réponse au Client",
+            "text": "Après traitement, le SAC enregistre la réponse dans Salesforce, garantissant que l'équipe des Réseaux Sociaux puisse répondre au client sur le même canal."
+        }
+    },
+    "directions": {
+        "title": "Quand orienter vers chaque service ?",
+        "sac": {
+            "title": "Orienté vers le SAC",
+            "text": "Lorsque cela implique une analyse, un traitement, une réponse au client ou un besoin de contact plus approfondi."
+        },
+        "loja": {
+            "title": "Orienté vers le Magasin",
+            "text": "Lorsque l'implication directe du responsable est nécessaire (ex : problèmes spécifiques à une unité, occurrences physiques, questions sur les produits locaux)."
+        }
+    },
+    "highlight": {
+        "title": "Résultat",
+        "text": "Ce flux garantit rapidité et standardisation dans le service via les réseaux sociaux."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Question :</strong> Qui est responsable de répondre au client sur les réseaux sociaux après le traitement du SAC ?",
+            "options": {
+                "a": "Le SAC lui-même",
+                "b": "L'équipe des Réseaux Sociaux",
+                "c": "Le responsable du magasin"
+            },
+            "feedback": "<strong>Correct !</strong> L'équipe des Réseaux Sociaux répond au client sur le même canal, en utilisant les informations enregistrées par le SAC dans Salesforce."
+        }
+    }
+}

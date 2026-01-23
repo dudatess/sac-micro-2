@@ -1,0 +1,27 @@
+{
+  "title": "Bem-vindo ao Curso",
+  "lead": "Este é o template inicial do seu curso. Substitua este conteúdo pelas informações do seu curso.",
+  "tip": {
+    "title": "Como usar este template",
+    "text": "Edite o arquivo <code>locales/pt/intro.json</code> para alterar os textos desta página.<br><br>Para adicionar componentes, copie de <code>template-system/core/templates/components/</code>"
+  },
+  "topics": {
+    "title": "O que você pode adicionar:",
+    "content": {
+      "title": "Páginas de Conteúdo",
+      "text": "Copie templates de template-system/core/templates/content/"
+    },
+    "components": {
+      "title": "Componentes Interativos",
+      "text": "Use cards, accordions, flip cards e outros componentes"
+    },
+    "exercises": {
+      "title": "Exercícios",
+      "text": "Quiz, flashcards, drag-drop, roleplay e mais"
+    }
+  },
+  "edit": {
+    "title": "Para personalizar",
+    "text": "1. Edite <code>content.json</code> para adicionar páginas<br>2. Edite os arquivos em <code>locales/</code> para traduções<br>3. Copie templates de <code>template-system/</code>"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "title": "💻 Our System",
+    "lead": "All the service processes you will learn in this course are performed through Salesforce, our central customer relationship management platform.",
+    "highlight": {
+        "title": "Why Salesforce?",
+        "text": "Salesforce centralizes all services in one place, ensuring traceability, standardization, and agility in handling each request."
+    },
+    "channels": {
+        "title": "Channels you will learn about:",
+        "redes": "Social Media",
+        "lojas": "Stores",
+        "pessoal": "Personal Service",
+        "site": "Website",
+        "app": "App",
+        "email": "Email"
+    },
+    "cta": {
+        "title": "Ready to start?",
+        "text": "In the following pages, you will learn how each communication channel works and how to use the system to ensure the best customer experience."
+    }
+}

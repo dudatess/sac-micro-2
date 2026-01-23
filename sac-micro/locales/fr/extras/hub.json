@@ -1,0 +1,33 @@
+{
+    "title": "Menu des Exercices",
+    "lead": "Ceci est le modèle du hub d'exercices. Ajoutez les exercices de votre cours ici.",
+    "about": {
+        "title": "À propos de ce modèle",
+        "text": "Utilisez cette page comme menu central pour les exercices.<br><br>Les étudiants peuvent accéder aux différents types d'activités à partir d'ici."
+    },
+    "available": {
+        "title": "Types d'exercices disponibles:"
+    },
+    "types": {
+        "quiz": {
+            "title": "Questionnaires",
+            "text": "Copiez de template-system/core/templates/exercises/quiz.html"
+        },
+        "flashcards": {
+            "title": "Flash Cards",
+            "text": "Copiez de template-system/core/templates/exercises/flashcards.html"
+        },
+        "dragdrop": {
+            "title": "Glisser-Déposer",
+            "text": "Copiez de template-system/core/templates/exercises/drag-drop.html"
+        },
+        "roleplay": {
+            "title": "Jeu de Rôle",
+            "text": "Copiez de template-system/core/templates/exercises/roleplay.html"
+        }
+    },
+    "tip": {
+        "title": "Pour ajouter des exercices",
+        "text": "1. Copiez le modèle de <code>template-system/core/templates/exercises/</code><br>2. Collez dans <code>paginas/pt/</code><br>3. Ajoutez dans <code>content.json</code> dans la section extras"
+    }
+}

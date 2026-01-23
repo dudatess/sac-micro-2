@@ -1,0 +1,32 @@
+{
+    "title": "🎯 Construisez le Flux",
+    "lead": "Ordonnez les étapes de chaque canal de service dans le bon ordre.",
+    "instructions": {
+        "title": "Comment ça marche",
+        "text": "Sélectionnez un canal, faites glisser les étapes dans le bon ordre et cliquez sur Vérifier. Complétez les 6 canaux pour terminer l'exercice !"
+    },
+    "select": {
+        "title": "Sélectionnez un canal :"
+    },
+    "channels": {
+        "redes": "Réseaux Sociaux",
+        "lojas": "Magasins",
+        "pessoal": "Service Personnel",
+        "site": "Site Web",
+        "app": "Application",
+        "email": "E-mail"
+    },
+    "progress": {
+        "label": "Progression :"
+    },
+    "items": {
+        "title": "Étapes du Flux (mélangées) :"
+    },
+    "order": {
+        "title": "Ordre Correct :"
+    },
+    "ui": {
+        "check_btn": "✓ Vérifier",
+        "reset_btn": "🔄 Recommencer"
+    }
+}

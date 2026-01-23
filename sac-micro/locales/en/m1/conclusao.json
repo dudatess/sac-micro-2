@@ -1,0 +1,39 @@
+{
+    "title": "🎉 Congratulations!",
+    "lead": "You have learned about all communication channels used by SAC customers.",
+    "summary": {
+        "title": "Channel Summary",
+        "redes": {
+            "title": "Social Media",
+            "text": "Monitoring → Salesforce → SAC/Store → Channel response"
+        },
+        "lojas": {
+            "title": "Stores",
+            "text": "Store registration → SAC takes over analysis → Final response"
+        },
+        "pessoal": {
+            "title": "Personal Service",
+            "text": "IVR/Intercom → Quick guidance → Immediate forwarding"
+        },
+        "site": {
+            "title": "Website",
+            "text": "Form → Automatic case → SAC Screening"
+        },
+        "app": {
+            "title": "App",
+            "text": "Form → Automatic case → SAC Screening"
+        },
+        "email": {
+            "title": "Email",
+            "text": "Email received → Automatic case → SAC Screening"
+        }
+    },
+    "common": {
+        "title": "What do they all have in common?",
+        "text": "All channels ensure proper registration in Salesforce, quick handling, and complete traceability of service."
+    },
+    "next": {
+        "title": "Next Step",
+        "text": "Now let's practice! In the following exercise, you will order the steps of each service flow."
+    }
+}

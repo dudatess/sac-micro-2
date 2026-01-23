@@ -1,0 +1,31 @@
+{
+    "sidebar": {
+        "title": "Meu Curso",
+        "toggle_menu": "Alternar menu",
+        "progress": "Progresso"
+    },
+    "header": {
+        "guided_reading": "🔊 Leitura guiada",
+        "activate_reading_hint": "Ative a leitura aqui!"
+    },
+    "navigation": {
+        "next": "Próximo",
+        "previous": "Anterior",
+        "complete": "Concluir",
+        "skip": "Pular"
+    },
+    "buttons": {
+        "start": "Iniciar",
+        "continue": "Continuar",
+        "finish": "Finalizar",
+        "back": "Voltar",
+        "close": "Fechar",
+        "save": "Salvar",
+        "cancel": "Cancelar"
+    },
+    "messages": {
+        "loading": "Carregando...",
+        "error": "Ocorreu um erro. Tente novamente.",
+        "success": "Operação realizada com sucesso!"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "title": "🏪 Tiendas",
+    "lead": "Las atenciones iniciadas directamente en las tiendas siguen un flujo colaborativo con el SAC.",
+    "flow": {
+        "title": "Flujo de Atención",
+        "step1": {
+            "title": "Registro en Tienda",
+            "text": "La tienda registra la atención en el sistema (Salesforce) siempre que identifica una solicitud que requiere continuidad, investigación o envío a otra área."
+        },
+        "step2": {
+            "title": "Direccionamiento al SAC",
+            "text": "Gran parte de estas demandas son direccionadas al SAC, que asume el análisis del caso."
+        },
+        "step3": {
+            "title": "Respuesta Final",
+            "text": "El SAC es responsable de garantizar que la respuesta sea clara, completa y dentro del plazo acordado, siempre registrando el progreso en el sistema."
+        }
+    },
+    "sac": {
+        "title": "El SAC asume:",
+        "item1": "El análisis del caso",
+        "item2": "El contacto con áreas internas (financiero, operaciones, estacionamiento, tarjetas)",
+        "item3": "La respuesta final al cliente"
+    },
+    "highlight": {
+        "title": "Beneficio",
+        "text": "Este proceso evita el retrabajo y garantiza que el cliente tenga una experiencia única y centralizada."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Verdadero o Falso:</strong> El SAC es responsable de la respuesta final al cliente en las atenciones iniciadas en las tiendas.",
+            "options": {
+                "a": "Verdadero",
+                "b": "Falso"
+            },
+            "feedback": "<strong>¡Correcto!</strong> El SAC garantiza que la respuesta sea clara, completa y dentro del plazo acordado."
+        }
+    }
+}

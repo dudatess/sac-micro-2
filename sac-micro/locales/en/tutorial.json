@@ -1,0 +1,24 @@
+{
+    "title": "Interactive Tutorial",
+    "welcome": "Welcome to the course! Let's explore the interface.",
+    "step_indicator": "of",
+    "steps": {
+        "s1": "📋 <strong>Side Menu</strong><br>Here you'll find all modules and pages. Click a module title to expand or collapse.",
+        "s2": "🧠 <strong>Learning Hub</strong><br>After completing modules, access extra activities to reinforce learning: summaries, quizzes, flashcards and more!",
+        "s3": "☰ <strong>Collapse Menu</strong><br>Click here to collapse or expand the side menu, giving more space for content.",
+        "s4": "⚙️ <strong>Settings</strong><br>Open to customize: dark mode, font size, voice speed, and language.",
+        "s5": "📖 <strong>Reading Assistance</strong><br>Enable to improve readability with larger spacing between letters and lines.",
+        "s6": "🔄 <strong>Auto-Read</strong><br>When enabled, content will be read automatically when each page loads.",
+        "s7": "🎤 <strong>Reading Voice</strong><br>Choose your preferred voice for reading. Voices with ⭐ are recommended for higher quality.",
+        "s8": "🔊 <strong>Page Reading</strong><br>Click the button to hear the content. Use the volume control to adjust.",
+        "s9": "👆 <strong>Interactive Elements</strong><br>Throughout the course, elements that <em>wiggle</em> are clickable! Click them to reveal additional content.",
+        "s10": "➡️ <strong>Navigation</strong><br>Use \"Previous\" and \"Next\" to navigate between course pages.",
+        "s11": "⌨️ <strong>Keyboard Shortcuts</strong><br>You can also navigate using the keyboard:<br>• <kbd>←</kbd> Previous page<br>• <kbd>→</kbd> Next page<br>• <kbd>Esc</kbd> Close popups<br>• <kbd>M</kbd> Open/close menu<br>• <kbd>?</kbd> View shortcuts"
+    },
+    "buttons": {
+        "next": "Next →",
+        "previous": "← Previous",
+        "skip": "Skip",
+        "finish": "Finish ✓"
+    }
+}

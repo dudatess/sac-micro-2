@@ -1,0 +1,45 @@
+{
+    "title": "👤 Service Personnel",
+    "lead": "Le service personnel est assuré par les opérateurs du SAC dans les situations nécessitant un contact immédiat.",
+    "situations": {
+        "title": "Situations de Service",
+        "ura": {
+            "title": "Appels SVI",
+            "text": "Clients qui appellent via SVI (Serveur Vocal Interactif) et sont dirigés vers le SAC."
+        },
+        "interfone": {
+            "title": "Interphone du Parking",
+            "text": "Clients qui utilisent l'interphone pour obtenir de l'aide pendant leur séjour au parking."
+        },
+        "estacionamento": {
+            "title": "Support Direct",
+            "text": "Situations de support direct pendant le séjour du client au parking."
+        }
+    },
+    "focus": {
+        "title": "Focus de l'Opérateur",
+        "item1": "Orientations rapides",
+        "item2": "Clarification des doutes",
+        "item3": "Ouverture de cas si nécessaire",
+        "item4": "Transferts immédiats selon le type d'occurrence"
+    },
+    "examples": {
+        "title": "Exemples de transferts",
+        "text": "Annulation de ticket, problèmes de machines, orientations d'accès."
+    },
+    "highlight": {
+        "title": "Importance",
+        "text": "C'est un canal essentiel pour l'agilité et pour la perception du support sur place par le client."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Question :</strong> Quel est le principal différenciateur du service personnel ?",
+            "options": {
+                "a": "Enregistrement détaillé dans Salesforce",
+                "b": "Analyse approfondie du cas",
+                "c": "Agilité et perception du support sur place"
+            },
+            "feedback": "<strong>Correct !</strong> Le service personnel est essentiel pour l'agilité et pour que le client ressente un support immédiat."
+        }
+    }
+}

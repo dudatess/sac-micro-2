@@ -1,0 +1,39 @@
+{
+    "title": "🎉 Parabéns!",
+    "lead": "Você conheceu todos os canais de comunicação utilizados pelos clientes do SAC.",
+    "summary": {
+        "title": "Resumo dos Canais",
+        "redes": {
+            "title": "Redes Sociais",
+            "text": "Monitoramento → Salesforce → SAC/Loja → Retorno no canal"
+        },
+        "lojas": {
+            "title": "Lojas",
+            "text": "Registro na loja → SAC assume análise → Retorno final"
+        },
+        "pessoal": {
+            "title": "Atendimento Pessoal",
+            "text": "URA/Interfone → Orientação rápida → Encaminhamento imediato"
+        },
+        "site": {
+            "title": "Site",
+            "text": "Formulário → Caso automático → Triagem SAC"
+        },
+        "app": {
+            "title": "App",
+            "text": "Formulário → Caso automático → Triagem SAC"
+        },
+        "email": {
+            "title": "E-mail",
+            "text": "E-mail recebido → Caso automático → Triagem SAC"
+        }
+    },
+    "common": {
+        "title": "O que todos têm em comum?",
+        "text": "Todos os canais garantem registro adequado na Salesforce, agilidade no tratamento e rastreabilidade completa do atendimento."
+    },
+    "next": {
+        "title": "Próximo Passo",
+        "text": "Agora vamos praticar! No exercício a seguir, você vai ordenar os passos de cada fluxo de atendimento."
+    }
+}

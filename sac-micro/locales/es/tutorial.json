@@ -1,0 +1,24 @@
+{
+    "title": "Tutorial Interactivo",
+    "welcome": "¡Bienvenido al curso! Vamos a conocer la interfaz.",
+    "step_indicator": "de",
+    "steps": {
+        "s1": "📋 <strong>Menú Lateral</strong><br>Aquí encuentras todos los módulos y páginas del curso. Haz clic en el título de un módulo para expandir o contraer.",
+        "s2": "🧠 <strong>Menú de Fijación</strong><br>Después de completar los módulos, accede a actividades extras para reforzar tu aprendizaje: resúmenes, cuestionarios, flashcards y mucho más.",
+        "s3": "☰ <strong>Contraer Menú</strong><br>Haz clic aquí para contraer o expandir el menú lateral, dando más espacio para el contenido.",
+        "s4": "⚙️ <strong>Configuraciones</strong><br>Abre para personalizar: modo oscuro, tamaño de fuente, velocidad de voz, e idioma.",
+        "s5": "📖 <strong>Asistencia de Lectura</strong><br>Activa para mejorar la legibilidad con mayor espaciado entre letras y líneas.",
+        "s6": "🔄 <strong>Lectura Automática</strong><br>Cuando está activada, el contenido será leído automáticamente al cargar cada página.",
+        "s7": "🎤 <strong>Voz de Lectura</strong><br>Elige la voz que prefieres para la lectura. Las voces con ⭐ son recomendadas por mayor calidad.",
+        "s8": "🔊 <strong>Lectura de Página</strong><br>Haz clic en el botón para escuchar el contenido. Usa el control de volumen al lado para ajustar.",
+        "s9": "👆 <strong>Elementos Interactivos</strong><br>A lo largo del curso, ¡elementos como este que <em>vibran</em> son clicables! Haz clic en ellos para revelar contenido adicional.",
+        "s10": "➡️ <strong>Navegación</strong><br>Usa \"Anterior\" y \"Siguiente\" para navegar entre las páginas del curso.",
+        "s11": "⌨️ <strong>Atajos de Teclado</strong><br>También puedes navegar usando el teclado:<br>• <kbd>←</kbd> Página anterior<br>• <kbd>→</kbd> Siguiente página<br>• <kbd>Esc</kbd> Cerrar popups<br>• <kbd>M</kbd> Abrir/cerrar menú<br>• <kbd>?</kbd> Ver atajos"
+    },
+    "buttons": {
+        "next": "Siguiente →",
+        "previous": "← Anterior",
+        "skip": "Saltar",
+        "finish": "Finalizar ✓"
+    }
+}

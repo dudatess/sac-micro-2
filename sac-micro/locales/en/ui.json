@@ -1,0 +1,31 @@
+{
+    "sidebar": {
+        "title": "Inside Customer Service",
+        "toggle_menu": "Toggle menu",
+        "progress": "Progress"
+    },
+    "header": {
+        "guided_reading": "🔊 Guided reading",
+        "activate_reading_hint": "Activate reading here!"
+    },
+    "navigation": {
+        "next": "Next",
+        "previous": "Previous",
+        "complete": "Complete",
+        "skip": "Skip"
+    },
+    "buttons": {
+        "start": "Start",
+        "continue": "Continue",
+        "finish": "Finish",
+        "back": "Back",
+        "close": "Close",
+        "save": "Save",
+        "cancel": "Cancel"
+    },
+    "messages": {
+        "loading": "Loading...",
+        "error": "An error occurred. Please try again.",
+        "success": "Operation completed successfully!"
+    }
+}

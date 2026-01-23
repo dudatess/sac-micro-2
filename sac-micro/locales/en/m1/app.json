@@ -1,0 +1,39 @@
+{
+    "title": "📲 App",
+    "lead": "Contacts made through the APP, using the available forms for communication with the company, also generate automatic tickets in Salesforce.",
+    "auto": {
+        "title": "Automatic Case",
+        "text": "When submitting a request through the APP, a case is automatically created in the system."
+    },
+    "flow": {
+        "title": "Service Flow",
+        "step1": {
+            "title": "App Submission",
+            "text": "The customer fills out the form in the app and submits their request."
+        },
+        "step2": {
+            "title": "SAC Screening",
+            "text": "The ticket is forwarded to SAC Screening."
+        }
+    },
+    "triagem": {
+        "title": "SAC Screening performs:",
+        "item1": "Topic classification",
+        "item2": "Forwarding to the responsible area, when applicable",
+        "item3": "Response to customers in cases handled directly by SAC"
+    },
+    "highlight": {
+        "title": "Benefit",
+        "text": "This channel facilitates customer contact and ensures structured tracking of all requests."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>True or False:</strong> The App service flow is similar to the Website, with automatic case creation.",
+            "options": {
+                "a": "True",
+                "b": "False"
+            },
+            "feedback": "<strong>Correct!</strong> Both the App and Website generate automatic tickets in Salesforce with similar flows."
+        }
+    }
+}

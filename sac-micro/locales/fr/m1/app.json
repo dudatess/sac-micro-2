@@ -1,0 +1,39 @@
+{
+    "title": "📲 Application",
+    "lead": "Les contacts effectués via l'APPLICATION, en utilisant les formulaires disponibles pour la communication avec l'entreprise, génèrent également des tickets automatiques dans Salesforce.",
+    "auto": {
+        "title": "Cas Automatique",
+        "text": "Lors de l'envoi d'une demande via l'APP, un cas est automatiquement créé dans le système."
+    },
+    "flow": {
+        "title": "Flux de Service",
+        "step1": {
+            "title": "Envoi par App",
+            "text": "Le client remplit le formulaire dans l'application et envoie sa demande."
+        },
+        "step2": {
+            "title": "Triage du SAC",
+            "text": "Le ticket est envoyé au Triage du SAC."
+        }
+    },
+    "triagem": {
+        "title": "Le Triage du SAC effectue :",
+        "item1": "La classification du sujet",
+        "item2": "L'envoi au service responsable, le cas échéant",
+        "item3": "La réponse aux clients dans les cas traités directement par le SAC"
+    },
+    "highlight": {
+        "title": "Avantage",
+        "text": "Ce canal facilite le contact client et assure un suivi structuré de toutes les demandes."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Vrai ou Faux :</strong> Le flux de service de l'App est similaire à celui du Site, avec création automatique de cas.",
+            "options": {
+                "a": "Vrai",
+                "b": "Faux"
+            },
+            "feedback": "<strong>Correct !</strong> L'App et le Site génèrent tous deux des tickets automatiques dans Salesforce avec des flux similaires."
+        }
+    }
+}

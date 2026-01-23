@@ -1,0 +1,45 @@
+{
+    "title": "👤 Atención Personal",
+    "lead": "La atención personal es realizada por los operadores del SAC en situaciones de contacto inmediato.",
+    "situations": {
+        "title": "Situaciones de Atención",
+        "ura": {
+            "title": "Llamadas por IVR",
+            "text": "Clientes que llaman por IVR (Respuesta de Voz Interactiva) y son dirigidos al SAC."
+        },
+        "interfone": {
+            "title": "Intercomunicador del Estacionamiento",
+            "text": "Clientes que accionan el intercomunicador para soporte durante su permanencia en el estacionamiento."
+        },
+        "estacionamento": {
+            "title": "Soporte Directo",
+            "text": "Situaciones de soporte directo durante la permanencia del cliente en el estacionamiento."
+        }
+    },
+    "focus": {
+        "title": "Enfoque del Operador",
+        "item1": "Orientaciones rápidas",
+        "item2": "Aclaración de dudas",
+        "item3": "Apertura de casos cuando sea necesario",
+        "item4": "Envíos inmediatos según el tipo de ocurrencia"
+    },
+    "examples": {
+        "title": "Ejemplos de envíos",
+        "text": "Cancelación de ticket, problemas con máquinas, orientaciones de acceso."
+    },
+    "highlight": {
+        "title": "Importancia",
+        "text": "Es un canal esencial para la agilidad y para la percepción de soporte presencial por parte del cliente."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Pregunta:</strong> ¿Cuál es el principal diferencial de la atención personal?",
+            "options": {
+                "a": "Registro detallado en Salesforce",
+                "b": "Análisis profundo del caso",
+                "c": "Agilidad y percepción de soporte presencial"
+            },
+            "feedback": "<strong>¡Correcto!</strong> La atención personal es esencial para la agilidad y para que el cliente sienta un soporte inmediato."
+        }
+    }
+}

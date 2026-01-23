@@ -1,0 +1,38 @@
+{
+    "btn_proximo": "Suivant",
+    "btn_anterior": "Précédent",
+    "menu_fixacao": "Menu de Fixation",
+    "menu_videos": "Vidéos",
+    "menu_atividades": "Activités",
+    "menu_impressao": "Impression",
+    "btn_ver_doc": "📄 Voir Document Complet",
+    "btn_ver_artigo": "🔗 Voir Article Complet",
+    "btn_cdc_pdf": "📄 CDC Intégrale (PDF)",
+    "btn_cdc_noticia": "🔗 35 Ans du CDC (Nouvelle)",
+    "hints": {
+        "click_discover": "👆 Cliquez pour découvrir",
+        "click_back": "👆 Cliquez pour revenir",
+        "drag_here": "Glissez ici",
+        "loading": "Chargement..."
+    },
+    "buttons": {
+        "back_to_menu": "← Retour au Menu",
+        "back_to_extras": "← Retour aux Extras",
+        "continue": "Continuer →",
+        "restart": "🔄 Rejouer",
+        "next": "Suivant →",
+        "previous": "← Précédent"
+    },
+    "feedback": {
+        "correct_answer": "✅ Réponse:",
+        "attention": "⚠️ Attention:",
+        "important": "IMPORTANT:",
+        "congrats": "Félicitations!",
+        "well_done": "Excellent travail!",
+        "modal_title_success": "🎉 Très Bien!",
+        "modal_title_error": "❌ Attention",
+        "modal_title_info": "ℹ️ Information",
+        "modal_correct_msg": "Réponse Correcte! Vous avez démontré des connaissances.",
+        "modal_wrong_default": "Ce n'est pas la bonne réponse. Réfléchissez au concept présenté."
+    }
+}

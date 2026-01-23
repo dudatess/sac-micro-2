@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Treinamento Canais de Comunicação SAC - Capacitação para a equipe de Serviço de Atendimento ao Cliente">
+    <meta name="theme-color" content="#FFA000">
+
+    <!-- PWA Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="SAC Canais">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/marca/mascote.png">
+
+    <title>Canais de Comunicação SAC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Simplificado -->
+    <header id="main-header" role="banner">
+        <div class="header-container">
+            <div class="header-left">
+                <button id="btn-menu" aria-label="Abrir/Fechar Menu" title="Menu" class="header-btn">☰</button>
+                <button id="btn-settings" aria-label="Configurações" title="Configurações"
+                    class="header-btn">⚙️</button>
+                <!-- TTS Toggle - igual ao das configurações -->
+                <div class="tts-toggle-container">
+                    <span class="tts-toggle-label" data-i18n="ui.header.guided_reading">🔊 Leitura guiada</span>
+                    <button id="btn-tts" class="toggle-btn" aria-label="Leitura guiada" title="Leitura guiada"
+                        data-i18n-aria="ui.header.guided_reading" data-i18n-title="ui.header.guided_reading">
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
+                <!-- Hint inicial para TTS -->
+                <div id="tts-hint" class="tts-hint">
+                    <span class="hint-arrow">←</span>
+                    <span class="hint-text" data-i18n="ui.header.activate_reading_hint">Ative a leitura aqui!</span>
+                </div>
+            </div>
+            <div class="header-progress">
+                <progress id="course-progress" value="0" max="100"></progress>
+                <span id="progress-text">0%</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Layout Principal -->
+    <div class="app-layout">
+
+        <!-- Menu Lateral -->
+        <nav id="sidebar" aria-label="Menu do Curso">
+            <div class="sidebar-header">
+                <h1 data-i18n="ui.sidebar.title">Por Dentro do SAC</h1>
+            </div>
+
+            <div id="menu-content" class="menu-items">
+                <!-- Itens do menu gerados via JS -->
+                <p class="loading-text" data-i18n="ui.messages.loading">Carregando curso...</p>
+            </div>
+
+            <!-- Logo do sidebar removido -->
+
+            <button id="toggle-sidebar" aria-label="Recolher Menu">«</button>
+        </nav>
+
+        <!-- Área de Conteúdo -->
+        <main id="main-content" role="main" tabindex="-1">
+            <div id="content-area" class="fade-in">
+                <!-- Conteúdo da página carregado aqui -->
+            </div>
+
+            <!-- Navegação de Rodapé -->
+            <footer class="content-nav">
+                <button id="btn-prev" disabled>
+                    <span class="btn-icon">←</span>
+                    <span class="btn-text" data-i18n="ui.navigation.previous">Anterior</span>
+                </button>
+                <button id="btn-next" disabled>
+                    <span class="btn-text" data-i18n="ui.navigation.next">Próximo</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </footer>
+
+            <!-- Brand Footer -->
+            <div class="brand-logo-footer">
+                <img src="assets/marca/Logo-Grupo-Zaffari_Preto.png" alt="Logo Grupo Zaffari" id="footer-logo-img">
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Custom Feedback Modal -->
+    <div id="modal-feedback" class="modal-overlay feedback-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="feedback-title">Feedback</h3>
+                <button class="modal-close" id="btn-feedback-close" aria-label="Fechar">×</button>
+            </div>
+            <div class="modal-body">
+                <p id="feedback-message">Mensagem aqui</p>
+                <button id="feedback-btn" class="btn-primary">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="modal-settings" class="modal-overlay">
+        <div class="modal settings-modal">
+            <div class="modal-header">
+                <h3 data-i18n="settings.title">⚙️ Configurações</h3>
+                <button class="modal-close" id="btn-settings-close" aria-label="Fechar">×</button>
+            </div>
+            <div class="modal-body settings-body">
+
+                <!-- Dark Mode -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">🌙</span>
+                        <span data-i18n="settings.dark_mode">Modo Escuro</span>
+                    </div>
+                    <button id="btn-contrast" class="toggle-btn" aria-label="Modo Escuro">
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
+
+                <!-- Font Size -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">🔤</span>
+                        <span data-i18n="settings.font_size">Tamanho da Fonte</span>
+                    </div>
+                    <div class="font-controls">
+                        <button id="btn-decrease-font" class="font-btn" aria-label="Diminuir Fonte">A-</button>
+                        <span id="font-size-display">100%</span>
+                        <button id="btn-increase-font" class="font-btn" aria-label="Aumentar Fonte">A+</button>
+                    </div>
+                </div>
+
+                <!-- Reading Assistance -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">📖</span>
+                        <span data-i18n="settings.reading_assistance">Assistência de Leitura</span>
+                    </div>
+                    <button id="btn-dyslexia" class="toggle-btn" aria-label="Assistência de Leitura">
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
+
+                <!-- Auto Read -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">🔊</span>
+                        <span data-i18n="settings.auto_read">Leitura guiada</span>
+                    </div>
+                    <button id="btn-auto-read" class="toggle-btn" aria-label="Leitura guiada">
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
+
+                <!-- Divider -->
+                <div class="settings-divider"></div>
+
+                <!-- Reading Speed -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">⏩</span>
+                        <span data-i18n="settings.reading_speed">Velocidade de Leitura</span>
+                    </div>
+                    <div class="speed-controls">
+                        <button class="speed-btn" data-speed="0.75">0.75x</button>
+                        <button class="speed-btn active" data-speed="1">1x</button>
+                        <button class="speed-btn" data-speed="1.25">1.25x</button>
+                        <button class="speed-btn" data-speed="1.5">1.5x</button>
+                        <button class="speed-btn" data-speed="2">2x</button>
+                    </div>
+                </div>
+
+                <!-- Voice Selection -->
+                <div class="settings-row settings-row-vertical">
+                    <div class="settings-label">
+                        <span class="settings-icon">🎤</span>
+                        <span data-i18n="settings.reading_voice">Voz de Leitura</span>
+                    </div>
+                    <div class="voice-controls">
+                        <select id="voice-select" class="voice-select">
+                            <option value="" data-i18n="settings.loading_voices">Carregando vozes...</option>
+                        </select>
+                        <button id="btn-voice-preview" class="btn-secondary-sm" data-i18n="settings.test_voice">▶
+                            Testar</button>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="settings-divider"></div>
+
+                <!-- Language -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">🌐</span>
+                        <span data-i18n="settings.language">Idioma</span>
+                    </div>
+                    <div class="lang-controls">
+                        <button id="btn-lang-pt" class="lang-btn active">PT</button>
+                        <button id="btn-lang-es" class="lang-btn">ES</button>
+                        <button id="btn-lang-fr" class="lang-btn">FR</button>
+                        <button id="btn-lang-en" class="lang-btn">EN</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Tutorial Overlay (fundo escuro) -->
+    <div id="tutorial-overlay" class="tutorial-overlay"></div>
+
+    <!-- Tutorial Tooltip (separado para z-index funcionar) -->
+    <div id="tutorial-tooltip" class="tutorial-tooltip">
+        <div class="tutorial-tooltip-content">
+            <p id="tutorial-text"></p>
+        </div>
+        <div class="tutorial-tooltip-actions">
+            <span id="tutorial-step-indicator"></span>
+            <div class="tutorial-buttons">
+                <button id="tutorial-skip" class="tutorial-btn-skip" data-i18n="tutorial.buttons.skip">Pular</button>
+                <button id="tutorial-next" class="tutorial-btn-next" data-i18n="tutorial.buttons.next">Próximo
+                    →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tutorial Interactive Demo (popup com exemplo de elemento interativo) -->
+    <div id="tutorial-interactive-demo" class="tutorial-demo-popup" style="display: none;">
+        <div class="tutorial-demo-card wiggle-animate">
+            <div class="tutorial-demo-icon">💡</div>
+            <div class="tutorial-demo-text">
+                <strong>Você Sabia?</strong>
+                <p>Este é um exemplo de elemento interativo!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Security & Integrity -->
+    <script src="assets/js/integrity.js"></script>
+
+    <!-- Core Dependencies -->
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/scorm-api.js"></script>
+    <script src="assets/js/audio-manager.js"></script>
+
+    <!-- Modular Components -->
+    <script src="assets/js/feedback.js"></script>
+    <script src="assets/js/gamification.js"></script>
+    <script src="assets/js/interactive.js"></script>
+    <script src="assets/js/accessibility.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/keyboard.js"></script>
+    <script src="assets/js/analytics.js"></script>
+
+    <!-- Main App & Tutorial -->
+    <script src="assets/js/simple-markdown.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/tutorial.js"></script>
+
+    <!-- VLibras - Acessibilidade em Libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then((registration) => {
+                        console.log('✅ Service Worker registrado com sucesso:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.log('❌ Falha ao registrar Service Worker:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+
+</html>

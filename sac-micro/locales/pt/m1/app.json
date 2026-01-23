@@ -1,0 +1,39 @@
+{
+    "title": "📲 App",
+    "lead": "Os contatos realizados por meio do APP, utilizando os formulários disponíveis para comunicação com a empresa, também geram atendimentos automáticos na Salesforce.",
+    "auto": {
+        "title": "Caso Automático",
+        "text": "Ao enviar a solicitação pelo APP, um caso é criado automaticamente no sistema."
+    },
+    "flow": {
+        "title": "Fluxo de Atendimento",
+        "step1": {
+            "title": "Envio pelo App",
+            "text": "O cliente preenche o formulário no aplicativo e envia sua solicitação."
+        },
+        "step2": {
+            "title": "Triagem do SAC",
+            "text": "O atendimento é encaminhado para a Triagem do SAC."
+        }
+    },
+    "triagem": {
+        "title": "A Triagem do SAC realiza:",
+        "item1": "A classificação do tema",
+        "item2": "O encaminhamento para a área responsável, quando aplicável",
+        "item3": "O retorno ao cliente nos casos atendidos diretamente pelo SAC"
+    },
+    "highlight": {
+        "title": "Benefício",
+        "text": "Esse canal facilita o contato do cliente e garante acompanhamento estruturado de toda a demanda."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Verdadeiro ou Falso:</strong> O fluxo de atendimento pelo App é similar ao do Site, com criação automática de caso.",
+            "options": {
+                "a": "Verdadeiro",
+                "b": "Falso"
+            },
+            "feedback": "<strong>Correto!</strong> Tanto o App quanto o Site geram atendimentos automáticos na Salesforce com fluxos similares."
+        }
+    }
+}

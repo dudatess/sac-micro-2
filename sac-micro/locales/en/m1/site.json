@@ -1,0 +1,40 @@
+{
+    "title": "🌐 Website",
+    "lead": "When a customer contacts through forms available on the website (such as Contact Us, Suggestions, or Complaints), the service is automatically generated in Salesforce.",
+    "auto": {
+        "title": "Automatic Process",
+        "text": "Filling out the form creates a case in the system without the need for manual opening."
+    },
+    "flow": {
+        "title": "Service Flow",
+        "step1": {
+            "title": "Automatic Creation",
+            "text": "The customer fills out the form on the website and a case is automatically created in Salesforce."
+        },
+        "step2": {
+            "title": "SAC Screening",
+            "text": "The service goes to SAC Screening, responsible for classifying and routing the case."
+        }
+    },
+    "triagem": {
+        "title": "SAC Screening is responsible for:",
+        "item1": "Classifying the request topic",
+        "item2": "Routing to the responsible area when necessary (card, parking, store, IT)",
+        "item3": "Responding to the customer when the solution is within SAC's scope"
+    },
+    "highlight": {
+        "title": "Benefit",
+        "text": "This flow ensures organization, quick handling, and complete traceability of the service."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Question:</strong> How is the service created when the customer uses the website form?",
+            "options": {
+                "a": "Manually by the operator",
+                "b": "Automatically in Salesforce",
+                "c": "By the Social Media team"
+            },
+            "feedback": "<strong>Correct!</strong> Filling out the form automatically creates a case in Salesforce without the need for manual opening."
+        }
+    }
+}

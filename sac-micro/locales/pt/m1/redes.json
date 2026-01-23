@@ -1,0 +1,49 @@
+{
+    "title": "📱 Redes Sociais",
+    "lead": "Quando o cliente registra uma reclamação ou solicitação nas redes sociais (Facebook, Instagram, Twitter/X), o atendimento segue um fluxo específico.",
+    "flow": {
+        "title": "Fluxo de Atendimento",
+        "step1": {
+            "title": "Monitoramento",
+            "text": "A equipe de Mídias Sociais monitora diariamente todas as menções, comentários e mensagens privadas dos clientes."
+        },
+        "step2": {
+            "title": "Criação do Atendimento",
+            "text": "Ao identificar uma demanda, a equipe cria um atendimento na Salesforce com todas as informações relevantes do caso."
+        },
+        "step3": {
+            "title": "Direcionamento",
+            "text": "O atendimento é direcionado ao SAC ou à Loja, conforme o tipo de demanda."
+        },
+        "step4": {
+            "title": "Retorno ao Cliente",
+            "text": "Após a tratativa, o SAC registra o retorno na Salesforce, garantindo que a equipe de Mídias Sociais possa responder ao cliente no mesmo canal."
+        }
+    },
+    "directions": {
+        "title": "Quando direcionar para cada área?",
+        "sac": {
+            "title": "Direcionado ao SAC",
+            "text": "Quando envolve análise, tratativa, retorno ao cliente ou necessidade de contato mais aprofundado."
+        },
+        "loja": {
+            "title": "Direcionado à Loja",
+            "text": "Quando é necessário envolvimento direto do gerente (ex.: problemas específicos de uma unidade, ocorrências físicas, dúvidas sobre produtos locais)."
+        }
+    },
+    "highlight": {
+        "title": "Resultado",
+        "text": "Esse fluxo garante rapidez e padronização no atendimento realizado por mídias sociais."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Questão:</strong> Quem é responsável por responder ao cliente nas redes sociais após a tratativa do SAC?",
+            "options": {
+                "a": "O próprio SAC",
+                "b": "A equipe de Mídias Sociais",
+                "c": "O gerente da loja"
+            },
+            "feedback": "<strong>Correto!</strong> A equipe de Mídias Sociais responde ao cliente no mesmo canal, usando as informações registradas pelo SAC na Salesforce."
+        }
+    }
+}

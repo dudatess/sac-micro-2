@@ -1,0 +1,38 @@
+{
+  "btn_proximo": "Próximo",
+  "btn_anterior": "Anterior",
+  "menu_fixacao": "Menu de Exercícios",
+  "menu_videos": "Vídeos",
+  "menu_atividades": "Atividades",
+  "menu_impressao": "Impressão",
+  "btn_ver_doc": "📄 Ver Documento Completo",
+  "btn_ver_artigo": "🔗 Ver Artigo Completo",
+  "btn_cdc_pdf": "📄 CDC na Íntegra (PDF)",
+  "btn_cdc_noticia": "🔗 35 Anos do CDC (Notícia)",
+  "hints": {
+    "click_discover": "👆 Clique para revelar",
+    "click_back": "👆 Clique para voltar",
+    "drag_here": "Arraste para cá",
+    "loading": "Carregando..."
+  },
+  "buttons": {
+    "back_to_menu": "← Voltar ao Menu",
+    "back_to_extras": "← Voltar ao Menu de Extras",
+    "continue": "Continuar →",
+    "restart": "🔄 Jogar Novamente",
+    "next": "Próximo →",
+    "previous": "← Anterior"
+  },
+  "feedback": {
+    "correct_answer": "✅ Resposta:",
+    "attention": "⚠️ Atenção:",
+    "important": "IMPORTANTE:",
+    "congrats": "Parabéns!",
+    "well_done": "Excelente trabalho!",
+    "modal_title_success": "🎉 Muito Bem!",
+    "modal_title_error": "❌ Atenção",
+    "modal_title_info": "ℹ️ Informação",
+    "modal_correct_msg": "Resposta Correta! Você demonstrou conhecimento.",
+    "modal_wrong_default": "Esta não é a resposta correta. Pense novamente sobre o conceito apresentado."
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "title": "🌐 Site",
+    "lead": "Quando o cliente realiza um contato pelos formulários disponíveis no site (como Fale Conosco, Sugestões ou Reclamações), o atendimento é gerado automaticamente na Salesforce.",
+    "auto": {
+        "title": "Processo Automático",
+        "text": "O preenchimento do formulário cria um caso no sistema, sem necessidade de abertura manual."
+    },
+    "flow": {
+        "title": "Fluxo de Atendimento",
+        "step1": {
+            "title": "Criação Automática",
+            "text": "O cliente preenche o formulário no site e um caso é criado automaticamente na Salesforce."
+        },
+        "step2": {
+            "title": "Triagem do SAC",
+            "text": "O atendimento segue para a Triagem do SAC, responsável por classificar e direcionar o caso."
+        }
+    },
+    "triagem": {
+        "title": "A Triagem do SAC é responsável por:",
+        "item1": "Classificar o tema da solicitação",
+        "item2": "Direcionar para a área responsável quando necessário (cartão, estacionamento, loja, TI)",
+        "item3": "Realizar o retorno ao cliente quando a solução estiver dentro do escopo do SAC"
+    },
+    "highlight": {
+        "title": "Benefício",
+        "text": "Esse fluxo garante organização, agilidade no tratamento e rastreabilidade completa do atendimento."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Questão:</strong> Como o atendimento é criado quando o cliente usa o formulário do site?",
+            "options": {
+                "a": "Manualmente pelo operador",
+                "b": "Automaticamente na Salesforce",
+                "c": "Pela equipe de Mídias Sociais"
+            },
+            "feedback": "<strong>Correto!</strong> O preenchimento do formulário cria um caso automaticamente na Salesforce, sem necessidade de abertura manual."
+        }
+    }
+}

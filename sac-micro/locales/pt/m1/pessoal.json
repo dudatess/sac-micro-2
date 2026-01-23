@@ -1,0 +1,45 @@
+{
+    "title": "👤 Atendimento Pessoal",
+    "lead": "O atendimento pessoal é realizado pelos operadores do SAC em situações de contato imediato.",
+    "situations": {
+        "title": "Situações de Atendimento",
+        "ura": {
+            "title": "Ligações pela URA",
+            "text": "Clientes que ligam pelas URAs (Unidades de Resposta Audível) e são direcionados ao SAC."
+        },
+        "interfone": {
+            "title": "Interfone do Estacionamento",
+            "text": "Clientes que acionam o interfone para suporte durante a permanência no estacionamento."
+        },
+        "estacionamento": {
+            "title": "Suporte Direto",
+            "text": "Situações de suporte direto durante a permanência do cliente no estacionamento."
+        }
+    },
+    "focus": {
+        "title": "Foco do Operador",
+        "item1": "Orientações rápidas",
+        "item2": "Esclarecimento de dúvidas",
+        "item3": "Abertura de casos quando necessário",
+        "item4": "Encaminhamentos imediatos conforme o tipo de ocorrência"
+    },
+    "examples": {
+        "title": "Exemplos de encaminhamentos",
+        "text": "Cancelamento de ticket, problemas com máquinas, orientações de acesso."
+    },
+    "highlight": {
+        "title": "Importância",
+        "text": "É um canal essencial para a agilidade e para a percepção de suporte presencial pelo cliente."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Questão:</strong> Qual é o principal diferencial do atendimento pessoal?",
+            "options": {
+                "a": "Registro detalhado na Salesforce",
+                "b": "Análise aprofundada do caso",
+                "c": "Agilidade e percepção de suporte presencial"
+            },
+            "feedback": "<strong>Correto!</strong> O atendimento pessoal é essencial para a agilidade e para que o cliente sinta um suporte imediato."
+        }
+    }
+}

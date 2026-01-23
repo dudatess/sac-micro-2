@@ -1,0 +1,21 @@
+{
+    "course_title": "SAC - Canales de Comunicación",
+    "modules": {
+        "intro": "🎯 Inicio",
+        "m1": "📱 Canales de Comunicación",
+        "extras": "🎮 Ejercicios"
+    },
+    "pages": {
+        "intro": "Antes de Avanzar",
+        "m1-abertura": "💻 Nuestro Sistema",
+        "m1-hub": "📌 Canales de Comunicación",
+        "m1-redes": "📱 Redes Sociales",
+        "m1-lojas": "🏪 Tiendas",
+        "m1-pessoal": "👤 Atención Personal",
+        "m1-site": "🌐 Sitio Web",
+        "m1-app": "📲 App",
+        "m1-email": "✉️ Correo Electrónico",
+        "m1-conclusao": "🎉 Conclusión",
+        "extras-fluxo": "🎯 Arma el Flujo"
+    }
+}

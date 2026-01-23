@@ -1,0 +1,40 @@
+{
+    "title": "✉️ Correo Electrónico",
+    "lead": "Cuando el cliente envía un correo electrónico directamente a la dirección de Contáctenos, la atención se registra automáticamente en Salesforce.",
+    "auto": {
+        "title": "Registro Automático",
+        "text": "El correo electrónico recibido genera un caso automáticamente en el sistema."
+    },
+    "flow": {
+        "title": "Flujo de Atención",
+        "step1": {
+            "title": "Apertura del Caso",
+            "text": "El correo del cliente se recibe y se crea un caso automáticamente en Salesforce."
+        },
+        "step2": {
+            "title": "Clasificación del SAC",
+            "text": "La atención pasa por la Clasificación del SAC para clasificación y direccionamiento."
+        }
+    },
+    "sac": {
+        "title": "El SAC es responsable de:",
+        "item1": "Identificar y clasificar el tipo de solicitud",
+        "item2": "Direccionar al área responsable cuando sea necesario",
+        "item3": "Realizar la respuesta al cliente cuando la solución esté dentro del alcance del SAC"
+    },
+    "highlight": {
+        "title": "Beneficio",
+        "text": "Este proceso asegura que todas las solicitudes recibidas por correo electrónico sean tratadas de forma estandarizada y acompañadas de principio a fin."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Pregunta:</strong> ¿Cuál es la principal ventaja del flujo de atención por correo electrónico?",
+            "options": {
+                "a": "Respuesta inmediata al cliente",
+                "b": "Contacto directo con el gerente",
+                "c": "Tratamiento estandarizado y rastreabilidad completa"
+            },
+            "feedback": "<strong>¡Correcto!</strong> El flujo por correo electrónico asegura tratamiento estandarizado y seguimiento de principio a fin."
+        }
+    }
+}

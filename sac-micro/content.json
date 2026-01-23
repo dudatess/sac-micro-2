@@ -1,0 +1,98 @@
+{
+    "metadata": {
+        "title": "Canais de Comunicação SAC",
+        "author": "Eduarda Tessari Pereira e Felipe Correa Bitencourt",
+        "version": "1.0.0",
+        "id": "sac-micro",
+        "last_update": "2026-01-23"
+    },
+    "modules": [
+        {
+            "id": "intro",
+            "title": "Início",
+            "icon": "🎯",
+            "pages": [
+                {
+                    "id": "intro",
+                    "title": "Antes de Avançar",
+                    "file": "paginas/pt/sac-intro.html",
+                    "type": "intro"
+                }
+            ]
+        },
+        {
+            "id": "m1",
+            "title": "Canais de Comunicação",
+            "icon": "📱",
+            "pages": [
+                {
+                    "id": "m1-hub",
+                    "title": "Canais de Comunicação",
+                    "file": "paginas/pt/sac-hub.html",
+                    "type": "module_start"
+                },
+                {
+                    "id": "m1-abertura",
+                    "title": "Nosso Sistema",
+                    "file": "paginas/pt/sac-abertura.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-redes",
+                    "title": "Redes Sociais",
+                    "file": "paginas/pt/sac-redes.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-lojas",
+                    "title": "Lojas",
+                    "file": "paginas/pt/sac-lojas.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-pessoal",
+                    "title": "Atendimento Pessoal",
+                    "file": "paginas/pt/sac-pessoal.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-site",
+                    "title": "Site",
+                    "file": "paginas/pt/sac-site.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-app",
+                    "title": "App",
+                    "file": "paginas/pt/sac-app.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-email",
+                    "title": "E-mail",
+                    "file": "paginas/pt/sac-email.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-conclusao",
+                    "title": "Conclusão",
+                    "file": "paginas/pt/sac-conclusao.html",
+                    "type": "completion"
+                }
+            ]
+        },
+        {
+            "id": "extras",
+            "title": "Exercícios",
+            "icon": "🎮",
+            "pages": [
+                {
+                    "id": "extras-fluxo",
+                    "title": "Monte o Fluxo",
+                    "file": "paginas/pt/sac-fluxo.html",
+                    "type": "exercises"
+                }
+            ]
+        }
+    ]
+}

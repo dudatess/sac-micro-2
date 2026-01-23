@@ -1,0 +1,596 @@
+<!-- 
+  EXERCÍCIO: Monte o Fluxo
+  Ordenar os passos de cada canal de atendimento
+-->
+<div class="content-header">
+    <h1 data-i18n="extras.fluxo.title"></h1>
+</div>
+
+<div class="content-body">
+
+    <p class="lead" data-i18n="extras.fluxo.lead"></p>
+
+    <!-- Instruções -->
+    <div class="highlight-box"
+        style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 4px solid #1976d2; margin: var(--spacing-lg) 0;">
+        <span class="icon">ℹ️</span>
+        <div class="highlight-box-content">
+            <h4 data-i18n="extras.fluxo.instructions.title" style="color: #1565c0;"></h4>
+            <p data-i18n="extras.fluxo.instructions.text"></p>
+        </div>
+    </div>
+
+    <!-- Seletor de Canal -->
+    <div class="channel-selector" style="margin: var(--spacing-xl) 0;">
+        <h3 data-i18n="extras.fluxo.select.title"></h3>
+        <div class="channel-tabs"
+            style="display: flex; flex-wrap: wrap; gap: var(--spacing-sm); margin-top: var(--spacing-md);">
+            <button class="channel-tab active" data-channel="redes">📱 <span
+                    data-i18n="extras.fluxo.channels.redes"></span></button>
+            <button class="channel-tab" data-channel="lojas">🏪 <span
+                    data-i18n="extras.fluxo.channels.lojas"></span></button>
+            <button class="channel-tab" data-channel="pessoal">👤 <span
+                    data-i18n="extras.fluxo.channels.pessoal"></span></button>
+            <button class="channel-tab" data-channel="site">🌐 <span
+                    data-i18n="extras.fluxo.channels.site"></span></button>
+            <button class="channel-tab" data-channel="app">📲 <span
+                    data-i18n="extras.fluxo.channels.app"></span></button>
+            <button class="channel-tab" data-channel="email">✉️ <span
+                    data-i18n="extras.fluxo.channels.email"></span></button>
+        </div>
+    </div>
+
+    <!-- Barra de Progresso -->
+    <div class="progress-bar-container" style="margin: var(--spacing-lg) 0;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
+            <span data-i18n="extras.fluxo.progress.label"></span>
+            <span id="progress-text">0/6</span>
+        </div>
+        <div class="progress-bar"
+            style="background: var(--bg-secondary); border-radius: 10px; height: 12px; overflow: hidden;">
+            <div id="progress-fill"
+                style="background: linear-gradient(90deg, #4caf50, #8bc34a); height: 100%; width: 0%; transition: width 0.5s ease;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Área do Exercício -->
+    <div class="flow-exercise" id="flow-exercise">
+
+        <!-- Itens para ordenar -->
+        <div class="flow-items-container">
+            <h4 data-i18n="extras.fluxo.items.title"></h4>
+            <div class="flow-items-pool" id="flow-items-pool">
+                <!-- Itens serão inseridos via JS -->
+            </div>
+        </div>
+
+        <!-- Área de destino (ordem) -->
+        <div class="flow-order-container">
+            <h4 data-i18n="extras.fluxo.order.title"></h4>
+            <div class="flow-order-slots" id="flow-order-slots">
+                <!-- Slots serão inseridos via JS -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Botões de Ação -->
+    <div class="flow-actions"
+        style="text-align: center; margin-top: var(--spacing-xl); display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+        <button class="btn-check" id="flow-check-btn" data-i18n="extras.fluxo.ui.check_btn">✓ Verificar</button>
+        <button class="btn-reset" id="flow-reset-btn" data-i18n="extras.fluxo.ui.reset_btn">🔄 Recomeçar</button>
+    </div>
+
+    <!-- Feedback -->
+    <div class="flow-feedback" id="flow-feedback" style="display: none; margin-top: var(--spacing-xl);"></div>
+
+</div>
+
+<style>
+    .channel-tab {
+        padding: var(--spacing-sm) var(--spacing-md);
+        border: 2px solid var(--border-color);
+        border-radius: var(--radius-md);
+        background: white;
+        cursor: pointer;
+        transition: all var(--transition-fast);
+        font-size: 0.95rem;
+    }
+
+    .channel-tab:hover {
+        border-color: var(--primary-color);
+        background: rgba(211, 47, 47, 0.05);
+    }
+
+    .channel-tab.active {
+        border-color: var(--primary-color);
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .channel-tab.completed {
+        border-color: #4caf50;
+        background: rgba(76, 175, 80, 0.15);
+        color: #2e7d32;
+    }
+
+    .channel-tab.completed::after {
+        content: ' ✓';
+    }
+
+    .flow-exercise {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xl);
+        margin: var(--spacing-xl) 0;
+    }
+
+    .flow-items-pool {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md);
+        background: var(--bg-secondary);
+        border-radius: var(--radius-md);
+        min-height: 250px;
+    }
+
+    .flow-item {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md);
+        background: white;
+        border: 2px solid var(--border-color);
+        border-radius: var(--radius-md);
+        cursor: grab;
+        transition: all var(--transition-fast);
+    }
+
+    .flow-item:active {
+        cursor: grabbing;
+    }
+
+    .flow-item.dragging {
+        opacity: 0.5;
+    }
+
+    .flow-item.correct {
+        border-color: #4caf50;
+        background: rgba(76, 175, 80, 0.1);
+    }
+
+    .flow-item.incorrect {
+        border-color: #f44336;
+        background: rgba(244, 67, 54, 0.1);
+    }
+
+    .flow-item .drag-handle {
+        color: var(--text-muted);
+        font-size: 1.2rem;
+    }
+
+    .flow-order-slots {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .flow-slot {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md);
+        background: var(--bg-secondary);
+        border: 2px dashed var(--border-color);
+        border-radius: var(--radius-md);
+        min-height: 60px;
+        transition: all var(--transition-fast);
+    }
+
+    .flow-slot.drag-over {
+        border-color: var(--primary-color);
+        background: rgba(211, 47, 47, 0.05);
+    }
+
+    .flow-slot .slot-number {
+        background: var(--primary-color);
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+
+    .flow-slot .slot-content {
+        flex: 1;
+        color: var(--text-muted);
+        font-style: italic;
+    }
+
+    .flow-slot.filled .slot-content {
+        color: var(--text-color);
+        font-style: normal;
+    }
+
+    @media (max-width: 768px) {
+        .flow-exercise {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Botões de Ação */
+    .btn-check,
+    .btn-reset {
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: var(--radius-md);
+        cursor: pointer;
+        transition: all var(--transition-fast);
+        min-width: 150px;
+    }
+
+    .btn-check {
+        background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+        color: white;
+        box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    }
+
+    .btn-check:hover {
+        background: linear-gradient(135deg, #43a047 0%, #4caf50 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    }
+
+    .btn-reset {
+        background: linear-gradient(135deg, #757575 0%, #9e9e9e 100%);
+        color: white;
+        box-shadow: 0 4px 15px rgba(117, 117, 117, 0.3);
+    }
+
+    .btn-reset:hover {
+        background: linear-gradient(135deg, #616161 0%, #757575 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(117, 117, 117, 0.4);
+    }
+</style>
+
+<script>
+    (function () {
+        // Dados dos fluxos por canal
+        const flowData = {
+            redes: {
+                steps: [
+                    { id: 1, text: 'Equipe de Mídias Sociais monitora menções, comentários e mensagens' },
+                    { id: 2, text: 'Identifica demanda e cria atendimento na Salesforce' },
+                    { id: 3, text: 'Direciona ao SAC ou à Loja conforme o tipo' },
+                    { id: 4, text: 'SAC faz tratativa e registra retorno na Salesforce' },
+                    { id: 5, text: 'Mídias Sociais responde ao cliente no canal original' }
+                ]
+            },
+            lojas: {
+                steps: [
+                    { id: 1, text: 'Loja identifica solicitação que exige continuidade' },
+                    { id: 2, text: 'Loja registra atendimento na Salesforce' },
+                    { id: 3, text: 'Demanda é direcionada ao SAC' },
+                    { id: 4, text: 'SAC faz análise e contato com áreas internas' },
+                    { id: 5, text: 'SAC garante retorno final ao cliente' }
+                ]
+            },
+            pessoal: {
+                steps: [
+                    { id: 1, text: 'Cliente liga pela URA ou aciona interfone' },
+                    { id: 2, text: 'Operador atende o contato imediato' },
+                    { id: 3, text: 'Operador fornece orientação rápida' },
+                    { id: 4, text: 'Abre caso quando necessário' },
+                    { id: 5, text: 'Faz encaminhamento imediato conforme ocorrência' }
+                ]
+            },
+            site: {
+                steps: [
+                    { id: 1, text: 'Cliente preenche formulário no site' },
+                    { id: 2, text: 'Caso é criado automaticamente na Salesforce' },
+                    { id: 3, text: 'Atendimento vai para Triagem do SAC' },
+                    { id: 4, text: 'SAC classifica e direciona para área responsável' },
+                    { id: 5, text: 'SAC realiza retorno ao cliente' }
+                ]
+            },
+            app: {
+                steps: [
+                    { id: 1, text: 'Cliente envia solicitação pelo App' },
+                    { id: 2, text: 'Caso é criado automaticamente na Salesforce' },
+                    { id: 3, text: 'Atendimento vai para Triagem do SAC' },
+                    { id: 4, text: 'SAC classifica e encaminha quando aplicável' },
+                    { id: 5, text: 'SAC realiza retorno ao cliente' }
+                ]
+            },
+            email: {
+                steps: [
+                    { id: 1, text: 'Cliente envia e-mail para Fale Conosco' },
+                    { id: 2, text: 'Caso é registrado automaticamente na Salesforce' },
+                    { id: 3, text: 'Atendimento passa pela Triagem do SAC' },
+                    { id: 4, text: 'SAC identifica e classifica o tipo de solicitação' },
+                    { id: 5, text: 'SAC realiza retorno ao cliente' }
+                ]
+            }
+        };
+
+        let currentChannel = 'redes';
+        let completedChannels = new Set();
+        let draggedItem = null;
+
+        // Inicializa o exercício
+        function initExercise() {
+            loadChannel(currentChannel);
+            setupEventListeners();
+        }
+
+        // Carrega um canal específico
+        function loadChannel(channel) {
+            currentChannel = channel;
+            const data = flowData[channel];
+            const pool = document.getElementById('flow-items-pool');
+            const slots = document.getElementById('flow-order-slots');
+
+            // Limpa áreas
+            pool.innerHTML = '';
+            slots.innerHTML = '';
+
+            // Cria slots de destino
+            for (let i = 1; i <= data.steps.length; i++) {
+                const slot = document.createElement('div');
+                slot.className = 'flow-slot';
+                slot.dataset.position = i;
+                slot.innerHTML = `
+                <span class="slot-number">${i}</span>
+                <span class="slot-content">Arraste o passo ${i} aqui</span>
+            `;
+                slots.appendChild(slot);
+            }
+
+            // Cria itens embaralhados
+            const shuffled = [...data.steps].sort(() => Math.random() - 0.5);
+            shuffled.forEach(step => {
+                const item = document.createElement('div');
+                item.className = 'flow-item';
+                item.draggable = true;
+                item.dataset.correctPosition = step.id;
+                item.innerHTML = `
+                <span class="drag-handle">⋮⋮</span>
+                <span class="flow-item-text">${step.text}</span>
+            `;
+                pool.appendChild(item);
+            });
+
+            // Atualiza tabs
+            document.querySelectorAll('.channel-tab').forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.dataset.channel === channel) {
+                    tab.classList.add('active');
+                }
+                if (completedChannels.has(tab.dataset.channel)) {
+                    tab.classList.add('completed');
+                }
+            });
+
+            // Limpa feedback
+            document.getElementById('flow-feedback').style.display = 'none';
+
+            // Re-attach drag listeners
+            attachDragListeners();
+        }
+
+        // Configura event listeners
+        function setupEventListeners() {
+            // Tabs de canal
+            document.querySelectorAll('.channel-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    loadChannel(tab.dataset.channel);
+                });
+            });
+
+            // Botão verificar
+            document.getElementById('flow-check-btn').addEventListener('click', checkAnswers);
+
+            // Botão recomeçar
+            document.getElementById('flow-reset-btn').addEventListener('click', () => {
+                loadChannel(currentChannel);
+            });
+        }
+
+        // Attach drag listeners aos itens
+        function attachDragListeners() {
+            document.querySelectorAll('.flow-item').forEach(item => {
+                item.addEventListener('dragstart', (e) => {
+                    draggedItem = item;
+                    item.classList.add('dragging');
+                });
+
+                item.addEventListener('dragend', () => {
+                    item.classList.remove('dragging');
+                    document.querySelectorAll('.flow-slot').forEach(s => s.classList.remove('drag-over'));
+                });
+            });
+
+            document.querySelectorAll('.flow-slot').forEach(slot => {
+                slot.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    slot.classList.add('drag-over');
+                });
+
+                slot.addEventListener('dragleave', () => {
+                    slot.classList.remove('drag-over');
+                });
+
+                slot.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    slot.classList.remove('drag-over');
+
+                    if (draggedItem) {
+                        // Guarda referência do slot de origem do item arrastado
+                        const sourceSlot = draggedItem.closest('.flow-slot');
+
+                        // Verifica se o slot de destino já tem um item
+                        const existingItem = slot.querySelector('.flow-item');
+
+                        if (existingItem && existingItem !== draggedItem) {
+                            // SWAP: troca os itens de lugar
+                            if (sourceSlot) {
+                                // Move item existente para o slot de origem
+                                sourceSlot.appendChild(existingItem);
+                                existingItem.classList.remove('correct', 'incorrect');
+                            } else {
+                                // Item arrastado veio do pool, move existente para o pool
+                                document.getElementById('flow-items-pool').appendChild(existingItem);
+                                existingItem.classList.remove('correct', 'incorrect');
+                            }
+                        }
+
+                        // Se veio de outro slot, limpa o slot de origem
+                        if (sourceSlot && sourceSlot !== slot) {
+                            if (!sourceSlot.querySelector('.flow-item')) {
+                                sourceSlot.classList.remove('filled');
+                                sourceSlot.querySelector('.slot-content').style.display = '';
+                            }
+                        }
+
+                        // Coloca o item arrastado no slot de destino
+                        slot.querySelector('.slot-content').style.display = 'none';
+                        slot.appendChild(draggedItem);
+                        slot.classList.add('filled');
+
+                        draggedItem.classList.remove('correct', 'incorrect');
+                    }
+                });
+            });
+
+            // Permitir soltar de volta no pool
+            const pool = document.getElementById('flow-items-pool');
+            pool.addEventListener('dragover', (e) => e.preventDefault());
+            pool.addEventListener('drop', (e) => {
+                e.preventDefault();
+                if (draggedItem) {
+                    // Remove do slot se estava em um
+                    const parentSlot = draggedItem.closest('.flow-slot');
+                    if (parentSlot) {
+                        parentSlot.classList.remove('filled');
+                        parentSlot.querySelector('.slot-content').style.display = '';
+                    }
+                    pool.appendChild(draggedItem);
+                    draggedItem.classList.remove('correct', 'incorrect');
+                }
+            });
+        }
+
+        // Verifica respostas
+        function checkAnswers() {
+            let correct = 0;
+            let total = flowData[currentChannel].steps.length;
+
+            document.querySelectorAll('.flow-slot').forEach(slot => {
+                const item = slot.querySelector('.flow-item');
+                if (item) {
+                    const correctPos = parseInt(item.dataset.correctPosition);
+                    const currentPos = parseInt(slot.dataset.position);
+
+                    if (correctPos === currentPos) {
+                        item.classList.add('correct');
+                        item.classList.remove('incorrect');
+                        correct++;
+                    } else {
+                        item.classList.add('incorrect');
+                        item.classList.remove('correct');
+                    }
+                }
+            });
+
+            const feedback = document.getElementById('flow-feedback');
+            feedback.style.display = 'block';
+
+            if (correct === total) {
+                completedChannels.add(currentChannel);
+                updateProgress();
+
+                feedback.innerHTML = `
+                <div class="highlight-box sucesso">
+                    <span class="icon">🎉</span>
+                    <div class="highlight-box-content">
+                        <h4>Parabéns!</h4>
+                        <p>Você acertou todos os ${total} passos do fluxo de ${getChannelName(currentChannel)}!</p>
+                    </div>
+                </div>
+            `;
+                if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
+
+                // Marca tab como completa
+                document.querySelector(`.channel-tab[data-channel="${currentChannel}"]`).classList.add('completed');
+            } else {
+                feedback.innerHTML = `
+                <div class="highlight-box atencao">
+                    <span class="icon">⚠️</span>
+                    <div class="highlight-box-content">
+                        <h4>Quase lá!</h4>
+                        <p>Você acertou ${correct} de ${total} passos. Revise os itens marcados em vermelho.</p>
+                    </div>
+                </div>
+            `;
+                if (typeof AudioManager !== 'undefined') AudioManager.playError();
+            }
+        }
+
+        // Atualiza barra de progresso
+        function updateProgress() {
+            const total = 6;
+            const completed = completedChannels.size;
+            const percentage = (completed / total) * 100;
+
+            document.getElementById('progress-fill').style.width = percentage + '%';
+            document.getElementById('progress-text').textContent = `${completed}/${total}`;
+
+            if (completed === total) {
+                showCompletionMessage();
+            }
+        }
+
+        // Mostra mensagem de conclusão total
+        function showCompletionMessage() {
+            const feedback = document.getElementById('flow-feedback');
+            feedback.innerHTML = `
+            <div class="highlight-box sucesso" style="background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);">
+                <span class="icon" style="font-size: 2rem;">🏆</span>
+                <div class="highlight-box-content">
+                    <h4>Exercício Completo!</h4>
+                    <p>Parabéns! Você completou todos os 6 fluxos de atendimento com sucesso!</p>
+                </div>
+            </div>
+        `;
+        }
+
+        // Helper para nome do canal
+        function getChannelName(channel) {
+            const names = {
+                redes: 'Redes Sociais',
+                lojas: 'Lojas',
+                pessoal: 'Atendimento Pessoal',
+                site: 'Site',
+                app: 'App',
+                email: 'E-mail'
+            };
+            return names[channel] || channel;
+        }
+
+        // Inicializa quando o DOM estiver pronto
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initExercise);
+        } else {
+            initExercise();
+        }
+    })();
+</script>

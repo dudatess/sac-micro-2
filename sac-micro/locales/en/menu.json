@@ -1,0 +1,21 @@
+{
+    "course_title": "SAC - Communication Channels",
+    "modules": {
+        "intro": "🎯 Start",
+        "m1": "📱 Communication Channels",
+        "extras": "🎮 Exercises"
+    },
+    "pages": {
+        "intro": "Before You Begin",
+        "m1-abertura": "💻 Our System",
+        "m1-hub": "📌 Communication Channels",
+        "m1-redes": "📱 Social Media",
+        "m1-lojas": "🏪 Stores",
+        "m1-pessoal": "👤 Personal Service",
+        "m1-site": "🌐 Website",
+        "m1-app": "📲 App",
+        "m1-email": "✉️ Email",
+        "m1-conclusao": "🎉 Conclusion",
+        "extras-fluxo": "🎯 Build the Flow"
+    }
+}

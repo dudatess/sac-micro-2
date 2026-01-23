@@ -1,0 +1,21 @@
+{
+    "title": "💻 Notre Système",
+    "lead": "Tous les processus de service que vous apprendrez dans ce cours sont effectués via Salesforce, notre plateforme centrale de gestion de la relation client.",
+    "highlight": {
+        "title": "Pourquoi Salesforce ?",
+        "text": "Salesforce centralise tous les services en un seul endroit, garantissant traçabilité, standardisation et agilité dans le traitement de chaque demande."
+    },
+    "channels": {
+        "title": "Canaux que vous découvrirez :",
+        "redes": "Réseaux Sociaux",
+        "lojas": "Magasins",
+        "pessoal": "Service Personnel",
+        "site": "Site Web",
+        "app": "Application",
+        "email": "E-mail"
+    },
+    "cta": {
+        "title": "Prêt à commencer ?",
+        "text": "Dans les pages suivantes, vous apprendrez comment fonctionne chaque canal de communication et comment utiliser le système pour garantir la meilleure expérience client."
+    }
+}

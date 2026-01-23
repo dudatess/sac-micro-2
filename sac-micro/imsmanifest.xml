@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<manifest identifier="MANIFEST-POR-DENTRO-DO-SAC" version="1.2"
+    xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+    xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+        http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion>
+    </metadata>
+
+    <organizations default="ORG-1">
+        <organization identifier="ORG-1">
+            <title>Canais de Comunicação SAC</title>
+            <item identifier="ITEM-1" identifierref="RES-INDEX">
+                <title>Canais de Comunicação SAC</title>
+            </item>
+        </organization>
+    </organizations>
+
+    <resources>
+        <resource
+            identifier="RES-INDEX"
+            type="webcontent"
+            adlcp:scormtype="sco"
+            href="index.html">
+            <file href="index.html"/>
+            <file href="content.json"/>
+            <file href="assets/js/app.js"/>
+            <file href="assets/js/scorm-api.js"/>
+            <file href="assets/css/style.css"/>
+        </resource>
+    </resources>
+</manifest>

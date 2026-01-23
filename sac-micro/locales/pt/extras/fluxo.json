@@ -1,0 +1,32 @@
+{
+    "title": "🎯 Monte o Fluxo",
+    "lead": "Ordene os passos de cada canal de atendimento na sequência correta.",
+    "instructions": {
+        "title": "Como funciona",
+        "text": "Selecione um canal, arraste os passos para a ordem correta e clique em Verificar. Complete todos os 6 canais para finalizar o exercício!"
+    },
+    "select": {
+        "title": "Selecione um canal:"
+    },
+    "channels": {
+        "redes": "Redes Sociais",
+        "lojas": "Lojas",
+        "pessoal": "Atendimento Pessoal",
+        "site": "Site",
+        "app": "App",
+        "email": "E-mail"
+    },
+    "progress": {
+        "label": "Progresso:"
+    },
+    "items": {
+        "title": "Passos do Fluxo (embaralhados):"
+    },
+    "order": {
+        "title": "Ordem Correta:"
+    },
+    "ui": {
+        "check_btn": "✓ Verificar",
+        "reset_btn": "🔄 Recomeçar"
+    }
+}

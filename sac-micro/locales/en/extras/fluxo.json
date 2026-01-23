@@ -1,0 +1,32 @@
+{
+    "title": "🎯 Build the Flow",
+    "lead": "Order the steps of each service channel in the correct sequence.",
+    "instructions": {
+        "title": "How it works",
+        "text": "Select a channel, drag the steps to the correct order, and click Check. Complete all 6 channels to finish the exercise!"
+    },
+    "select": {
+        "title": "Select a channel:"
+    },
+    "channels": {
+        "redes": "Social Media",
+        "lojas": "Stores",
+        "pessoal": "Personal Service",
+        "site": "Website",
+        "app": "App",
+        "email": "Email"
+    },
+    "progress": {
+        "label": "Progress:"
+    },
+    "items": {
+        "title": "Flow Steps (shuffled):"
+    },
+    "order": {
+        "title": "Correct Order:"
+    },
+    "ui": {
+        "check_btn": "✓ Check",
+        "reset_btn": "🔄 Restart"
+    }
+}

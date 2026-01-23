@@ -1,0 +1,40 @@
+{
+    "title": "✉️ E-mail",
+    "lead": "Lorsqu'un client envoie un e-mail directement à l'adresse Contactez-nous, le service est automatiquement enregistré dans Salesforce.",
+    "auto": {
+        "title": "Enregistrement Automatique",
+        "text": "L'e-mail reçu génère automatiquement un cas dans le système."
+    },
+    "flow": {
+        "title": "Flux de Service",
+        "step1": {
+            "title": "Ouverture du Cas",
+            "text": "L'e-mail du client est reçu et un cas est automatiquement créé dans Salesforce."
+        },
+        "step2": {
+            "title": "Triage du SAC",
+            "text": "Le service passe par le Triage du SAC pour classification et orientation."
+        }
+    },
+    "sac": {
+        "title": "Le SAC est responsable de :",
+        "item1": "Identifier et classer le type de demande",
+        "item2": "Orienter vers le service responsable si nécessaire",
+        "item3": "Répondre au client lorsque la solution est dans le périmètre du SAC"
+    },
+    "highlight": {
+        "title": "Avantage",
+        "text": "Ce processus garantit que toutes les demandes reçues par e-mail sont traitées de manière standardisée et suivies du début à la fin."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Question :</strong> Quel est le principal avantage du flux de service par e-mail ?",
+            "options": {
+                "a": "Réponse immédiate au client",
+                "b": "Contact direct avec le responsable",
+                "c": "Traitement standardisé et traçabilité complète"
+            },
+            "feedback": "<strong>Correct !</strong> Le flux par e-mail assure un traitement standardisé et un suivi du début à la fin."
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "title": "🎯 Arma el Flujo",
+    "lead": "Ordena los pasos de cada canal de atención en la secuencia correcta.",
+    "instructions": {
+        "title": "Cómo funciona",
+        "text": "Selecciona un canal, arrastra los pasos al orden correcto y haz clic en Verificar. ¡Completa los 6 canales para finalizar el ejercicio!"
+    },
+    "select": {
+        "title": "Selecciona un canal:"
+    },
+    "channels": {
+        "redes": "Redes Sociales",
+        "lojas": "Tiendas",
+        "pessoal": "Atención Personal",
+        "site": "Sitio Web",
+        "app": "App",
+        "email": "Correo Electrónico"
+    },
+    "progress": {
+        "label": "Progreso:"
+    },
+    "items": {
+        "title": "Pasos del Flujo (desordenados):"
+    },
+    "order": {
+        "title": "Orden Correcto:"
+    },
+    "ui": {
+        "check_btn": "✓ Verificar",
+        "reset_btn": "🔄 Reiniciar"
+    }
+}

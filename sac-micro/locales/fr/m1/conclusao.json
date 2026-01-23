@@ -1,0 +1,39 @@
+{
+    "title": "🎉 Félicitations !",
+    "lead": "Vous avez découvert tous les canaux de communication utilisés par les clients du SAC.",
+    "summary": {
+        "title": "Résumé des Canaux",
+        "redes": {
+            "title": "Réseaux Sociaux",
+            "text": "Surveillance → Salesforce → SAC/Magasin → Réponse sur le canal"
+        },
+        "lojas": {
+            "title": "Magasins",
+            "text": "Enregistrement en magasin → SAC prend en charge l'analyse → Réponse finale"
+        },
+        "pessoal": {
+            "title": "Service Personnel",
+            "text": "SVI/Interphone → Orientation rapide → Envoi immédiat"
+        },
+        "site": {
+            "title": "Site Web",
+            "text": "Formulaire → Cas automatique → Triage SAC"
+        },
+        "app": {
+            "title": "Application",
+            "text": "Formulaire → Cas automatique → Triage SAC"
+        },
+        "email": {
+            "title": "E-mail",
+            "text": "E-mail reçu → Cas automatique → Triage SAC"
+        }
+    },
+    "common": {
+        "title": "Qu'ont-ils tous en commun ?",
+        "text": "Tous les canaux garantissent un enregistrement approprié dans Salesforce, un traitement rapide et une traçabilité complète du service."
+    },
+    "next": {
+        "title": "Prochaine Étape",
+        "text": "Maintenant, pratiquons ! Dans l'exercice suivant, vous ordonnerez les étapes de chaque flux de service."
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "sidebar": {
+        "title": "Au Cœur du Service Client",
+        "toggle_menu": "Basculer menu",
+        "progress": "Progrès"
+    },
+    "header": {
+        "guided_reading": "🔊 Lecture guidée",
+        "activate_reading_hint": "Activez la lecture ici !"
+    },
+    "navigation": {
+        "next": "Suivant",
+        "previous": "Précédent",
+        "complete": "Conclure",
+        "skip": "Sauter"
+    },
+    "buttons": {
+        "start": "Démarrer",
+        "continue": "Continuer",
+        "finish": "Terminer",
+        "back": "Retour",
+        "close": "Fermer",
+        "save": "Sauvegarder",
+        "cancel": "Annuler"
+    },
+    "messages": {
+        "loading": "Chargement...",
+        "error": "Une erreur est survenue. Réessayez.",
+        "success": "Opération réalisée avec succès!"
+    }
+}

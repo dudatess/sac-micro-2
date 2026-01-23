@@ -1,0 +1,39 @@
+{
+    "title": "🏪 Lojas",
+    "lead": "Os atendimentos iniciados diretamente nas lojas seguem um fluxo colaborativo com o SAC.",
+    "flow": {
+        "title": "Fluxo de Atendimento",
+        "step1": {
+            "title": "Registro na Loja",
+            "text": "A loja registra o atendimento no sistema (Salesforce) sempre que identifica uma solicitação que exige continuidade, investigação ou encaminhamento para outra área."
+        },
+        "step2": {
+            "title": "Direcionamento ao SAC",
+            "text": "Grande parte dessas demandas são direcionadas ao SAC, que assume a análise do caso."
+        },
+        "step3": {
+            "title": "Retorno Final",
+            "text": "O SAC é responsável por garantir que a devolutiva seja clara, completa e dentro do prazo acordado, sempre registrando o progresso no sistema."
+        }
+    },
+    "sac": {
+        "title": "O SAC assume:",
+        "item1": "A análise do caso",
+        "item2": "O contato com áreas internas (financeiro, operações, estacionamento, cartões)",
+        "item3": "O retorno final ao cliente"
+    },
+    "highlight": {
+        "title": "Benefício",
+        "text": "Esse processo evita retrabalho e garante que o cliente tenha uma experiência única e centralizada."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Verdadeiro ou Falso:</strong> O SAC é responsável pelo retorno final ao cliente nos atendimentos iniciados nas lojas.",
+            "options": {
+                "a": "Verdadeiro",
+                "b": "Falso"
+            },
+            "feedback": "<strong>Correto!</strong> O SAC garante que a devolutiva seja clara, completa e dentro do prazo acordado."
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "title": "🌐 Sitio Web",
+    "lead": "Cuando el cliente realiza un contacto por los formularios disponibles en el sitio (como Contáctenos, Sugerencias o Quejas), la atención se genera automáticamente en Salesforce.",
+    "auto": {
+        "title": "Proceso Automático",
+        "text": "El llenado del formulario crea un caso en el sistema, sin necesidad de apertura manual."
+    },
+    "flow": {
+        "title": "Flujo de Atención",
+        "step1": {
+            "title": "Creación Automática",
+            "text": "El cliente completa el formulario en el sitio y un caso se crea automáticamente en Salesforce."
+        },
+        "step2": {
+            "title": "Clasificación del SAC",
+            "text": "La atención pasa a la Clasificación del SAC, responsable de clasificar y direccionar el caso."
+        }
+    },
+    "triagem": {
+        "title": "La Clasificación del SAC es responsable de:",
+        "item1": "Clasificar el tema de la solicitud",
+        "item2": "Direccionar al área responsable cuando sea necesario (tarjeta, estacionamiento, tienda, TI)",
+        "item3": "Realizar la respuesta al cliente cuando la solución esté dentro del alcance del SAC"
+    },
+    "highlight": {
+        "title": "Beneficio",
+        "text": "Este flujo garantiza organización, agilidad en el tratamiento y rastreabilidad completa de la atención."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Pregunta:</strong> ¿Cómo se crea la atención cuando el cliente usa el formulario del sitio?",
+            "options": {
+                "a": "Manualmente por el operador",
+                "b": "Automáticamente en Salesforce",
+                "c": "Por el equipo de Redes Sociales"
+            },
+            "feedback": "<strong>¡Correcto!</strong> El llenado del formulario crea un caso automáticamente en Salesforce, sin necesidad de apertura manual."
+        }
+    }
+}

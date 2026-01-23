@@ -1,0 +1,70 @@
+/* TTS Hint Animation */
+/*
+ * © 2026 Eduarda Tessari Pereira & Felipe Correa Bitencourt.
+ * All Rights Reserved.
+ * Unauthorized distribution or modification is prohibited.
+ */
+
+.tts-hint {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    animation: hintFadeInOut 5s ease-in-out forwards;
+    pointer-events: none;
+}
+
+.hint-arrow {
+    font-size: 1.25rem;
+    animation: hintPulse 1s ease-in-out infinite;
+}
+
+.hint-text {
+    font-weight: 600;
+}
+
+@keyframes hintFadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-10px);
+        display: none;
+    }
+}
+
+@keyframes hintPulse {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+}
+
+/* Esconder hint após animação */
+.tts-hint.hidden {
+    display: none;
+}

@@ -1,0 +1,39 @@
+{
+    "title": "📲 App",
+    "lead": "Los contactos realizados a través de la APP, utilizando los formularios disponibles para comunicación con la empresa, también generan atenciones automáticas en Salesforce.",
+    "auto": {
+        "title": "Caso Automático",
+        "text": "Al enviar la solicitud por la APP, se crea automáticamente un caso en el sistema."
+    },
+    "flow": {
+        "title": "Flujo de Atención",
+        "step1": {
+            "title": "Envío por App",
+            "text": "El cliente completa el formulario en la aplicación y envía su solicitud."
+        },
+        "step2": {
+            "title": "Clasificación del SAC",
+            "text": "La atención se envía a la Clasificación del SAC."
+        }
+    },
+    "triagem": {
+        "title": "La Clasificación del SAC realiza:",
+        "item1": "La clasificación del tema",
+        "item2": "El envío al área responsable, cuando corresponda",
+        "item3": "La respuesta al cliente en casos atendidos directamente por el SAC"
+    },
+    "highlight": {
+        "title": "Beneficio",
+        "text": "Este canal facilita el contacto del cliente y garantiza el seguimiento estructurado de toda la demanda."
+    },
+    "quiz": {
+        "q1": {
+            "text": "<strong>Verdadero o Falso:</strong> El flujo de atención por App es similar al del Sitio, con creación automática de caso.",
+            "options": {
+                "a": "Verdadero",
+                "b": "Falso"
+            },
+            "feedback": "<strong>¡Correcto!</strong> Tanto el App como el Sitio generan atenciones automáticas en Salesforce con flujos similares."
+        }
+    }
+}
