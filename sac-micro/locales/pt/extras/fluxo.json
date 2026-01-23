@@ -27,6 +27,65 @@
     },
     "ui": {
         "check_btn": "✓ Verificar",
-        "reset_btn": "🔄 Recomeçar"
+        "reset_btn": "🔄 Recomeçar",
+        "slot_placeholder": "Arraste o passo {n} aqui",
+        "feedback": {
+            "success": {
+                "title": "Parabéns!",
+                "text": "Você acertou todos os {total} passos do fluxo de {channel}!"
+            },
+            "error": {
+                "title": "Quase lá!",
+                "text": "Você acertou {correct} de {total} passos. Revise os itens marcados em vermelho."
+            },
+            "completion": {
+                "title": "Exercício Completo!",
+                "text": "Parabéns! Você completou todos os 6 fluxos de atendimento com sucesso!"
+            }
+        }
+    },
+    "data": {
+        "redes": [
+            "Equipe de Mídias Sociais monitora menções, comentários e mensagens",
+            "Identifica demanda e cria atendimento na Salesforce",
+            "Direciona ao SAC ou à Loja conforme o tipo",
+            "SAC faz tratativa e registra retorno na Salesforce",
+            "Mídias Sociais responde ao cliente no canal original"
+        ],
+        "lojas": [
+            "Loja identifica solicitação que exige continuidade",
+            "Loja registra atendimento na Salesforce",
+            "Demanda é direcionada ao SAC",
+            "SAC faz análise e contato com áreas internas",
+            "SAC garante retorno final ao cliente"
+        ],
+        "pessoal": [
+            "Cliente liga pela URA ou aciona interfone",
+            "Operador atende o contato imediato",
+            "Operador fornece orientação rápida",
+            "Abre caso quando necessário",
+            "Faz encaminhamento imediato conforme ocorrência"
+        ],
+        "site": [
+            "Cliente preenche formulário no site",
+            "Caso é criado automaticamente na Salesforce",
+            "Atendimento vai para Triagem do SAC",
+            "SAC classifica e direciona para área responsável",
+            "SAC realiza retorno ao cliente"
+        ],
+        "app": [
+            "Cliente envia solicitação pelo App",
+            "Caso é criado automaticamente na Salesforce",
+            "Atendimento vai para Triagem do SAC",
+            "SAC classifica e encaminha quando aplicável",
+            "SAC realiza retorno ao cliente"
+        ],
+        "email": [
+            "Cliente envia e-mail para Fale Conosco",
+            "Caso é registrado automaticamente na Salesforce",
+            "Atendimento passa pela Triagem do SAC",
+            "SAC identifica e classifica o tipo de solicitação",
+            "SAC realiza retorno ao cliente"
+        ]
     }
 }

@@ -27,6 +27,65 @@
     },
     "ui": {
         "check_btn": "✓ Vérifier",
-        "reset_btn": "🔄 Recommencer"
+        "reset_btn": "🔄 Recommencer",
+        "slot_placeholder": "Faites glisser l'étape {n} ici",
+        "feedback": {
+            "success": {
+                "title": "Félicitations !",
+                "text": "Vous avez réussi toutes les {total} étapes du flux {channel} !"
+            },
+            "error": {
+                "title": "Presque !",
+                "text": "Vous avez réussi {correct} étapes sur {total}. Révisez les éléments marqués en rouge."
+            },
+            "completion": {
+                "title": "Exercice Terminé !",
+                "text": "Félicitations ! Vous avez complété avec succès les 6 flux de service !"
+            }
+        }
+    },
+    "data": {
+        "redes": [
+            "L'équipe des réseaux sociaux surveille les mentions, les commentaires et les messages",
+            "Identifie la demande et crée une assistance dans Salesforce",
+            "Dirige vers le SAC ou le magasin selon le type",
+            "Le SAC effectue le traitement et enregistre le retour dans Salesforce",
+            "Les réseaux sociaux répondent au client sur le canal d'origine"
+        ],
+        "lojas": [
+            "Le magasin identifie la demande qui nécessite une continuité",
+            "Le magasin enregistre l'assistance dans Salesforce",
+            "La demande est dirigée vers le SAC",
+            "Le SAC effectue l'analyse et contacte les services internes",
+            "Le SAC garantit le retour final au client"
+        ],
+        "pessoal": [
+            "Le client appelle par l'IVR ou active l'interphone",
+            "L'opérateur répond au contact immédiat",
+            "L'opérateur fournit des conseils rapides",
+            "Ouvre un dossier si nécessaire",
+            "Effectue un transfert immédiat selon l'incident"
+        ],
+        "site": [
+            "Le client remplit le formulaire sur le site Web",
+            "Le dossier est automatiquement créé dans Salesforce",
+            "L'assistance passe par le tri du SAC",
+            "Le SAC classe et dirige vers le service responsable",
+            "Le SAC effectue le retour au client"
+        ],
+        "app": [
+            "Le client envoie une demande via l'application",
+            "Le dossier est automatiquement créé dans Salesforce",
+            "L'assistance passe par le tri du SAC",
+            "Le SAC classe et transfère le cas échéant",
+            "Le SAC effectue le retour au client"
+        ],
+        "email": [
+            "Le client envoie un e-mail à 'Contactez-nous'",
+            "Le dossier est automatiquement enregistré dans Salesforce",
+            "L'assistance passe par le tri du SAC",
+            "Le SAC identifie et classe le type de demande",
+            "Le SAC effectue le retour au client"
+        ]
     }
 }

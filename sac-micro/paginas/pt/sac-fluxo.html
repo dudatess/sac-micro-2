@@ -264,70 +264,33 @@
 
 <script>
     (function () {
-        // Dados dos fluxos por canal
-        const flowData = {
-            redes: {
-                steps: [
-                    { id: 1, text: 'Equipe de Mídias Sociais monitora menções, comentários e mensagens' },
-                    { id: 2, text: 'Identifica demanda e cria atendimento na Salesforce' },
-                    { id: 3, text: 'Direciona ao SAC ou à Loja conforme o tipo' },
-                    { id: 4, text: 'SAC faz tratativa e registra retorno na Salesforce' },
-                    { id: 5, text: 'Mídias Sociais responde ao cliente no canal original' }
-                ]
-            },
-            lojas: {
-                steps: [
-                    { id: 1, text: 'Loja identifica solicitação que exige continuidade' },
-                    { id: 2, text: 'Loja registra atendimento na Salesforce' },
-                    { id: 3, text: 'Demanda é direcionada ao SAC' },
-                    { id: 4, text: 'SAC faz análise e contato com áreas internas' },
-                    { id: 5, text: 'SAC garante retorno final ao cliente' }
-                ]
-            },
-            pessoal: {
-                steps: [
-                    { id: 1, text: 'Cliente liga pela URA ou aciona interfone' },
-                    { id: 2, text: 'Operador atende o contato imediato' },
-                    { id: 3, text: 'Operador fornece orientação rápida' },
-                    { id: 4, text: 'Abre caso quando necessário' },
-                    { id: 5, text: 'Faz encaminhamento imediato conforme ocorrência' }
-                ]
-            },
-            site: {
-                steps: [
-                    { id: 1, text: 'Cliente preenche formulário no site' },
-                    { id: 2, text: 'Caso é criado automaticamente na Salesforce' },
-                    { id: 3, text: 'Atendimento vai para Triagem do SAC' },
-                    { id: 4, text: 'SAC classifica e direciona para área responsável' },
-                    { id: 5, text: 'SAC realiza retorno ao cliente' }
-                ]
-            },
-            app: {
-                steps: [
-                    { id: 1, text: 'Cliente envia solicitação pelo App' },
-                    { id: 2, text: 'Caso é criado automaticamente na Salesforce' },
-                    { id: 3, text: 'Atendimento vai para Triagem do SAC' },
-                    { id: 4, text: 'SAC classifica e encaminha quando aplicável' },
-                    { id: 5, text: 'SAC realiza retorno ao cliente' }
-                ]
-            },
-            email: {
-                steps: [
-                    { id: 1, text: 'Cliente envia e-mail para Fale Conosco' },
-                    { id: 2, text: 'Caso é registrado automaticamente na Salesforce' },
-                    { id: 3, text: 'Atendimento passa pela Triagem do SAC' },
-                    { id: 4, text: 'SAC identifica e classifica o tipo de solicitação' },
-                    { id: 5, text: 'SAC realiza retorno ao cliente' }
-                ]
-            }
-        };
+        // Obter dados dos fluxos via i18n
+        function getFlowData() {
+            const channels = ['redes', 'lojas', 'pessoal', 'site', 'app', 'email'];
+            const data = {};
 
+            channels.forEach(channel => {
+                const steps = I18n.t(`extras.fluxo.data.${channel}`);
+                if (Array.isArray(steps)) {
+                    data[channel] = {
+                        steps: steps.map((text, index) => ({
+                            id: index + 1,
+                            text: text
+                        }))
+                    };
+                }
+            });
+            return data;
+        }
+
+        let flowData = getFlowData();
         let currentChannel = 'redes';
         let completedChannels = new Set();
         let draggedItem = null;
 
         // Inicializa o exercício
         function initExercise() {
+            flowData = getFlowData(); // Refresh data in case language changed
             loadChannel(currentChannel);
             setupEventListeners();
         }
@@ -336,6 +299,8 @@
         function loadChannel(channel) {
             currentChannel = channel;
             const data = flowData[channel];
+            if (!data) return;
+
             const pool = document.getElementById('flow-items-pool');
             const slots = document.getElementById('flow-order-slots');
 
@@ -344,13 +309,15 @@
             slots.innerHTML = '';
 
             // Cria slots de destino
+            const slotPlaceholder = I18n.t('extras.fluxo.ui.slot_placeholder');
             for (let i = 1; i <= data.steps.length; i++) {
                 const slot = document.createElement('div');
                 slot.className = 'flow-slot';
                 slot.dataset.position = i;
+                const placeholder = slotPlaceholder.replace('{n}', i);
                 slot.innerHTML = `
                 <span class="slot-number">${i}</span>
-                <span class="slot-content">Arraste o passo ${i} aqui</span>
+                <span class="slot-content">${placeholder}</span>
             `;
                 slots.appendChild(slot);
             }
@@ -401,6 +368,12 @@
 
             // Botão recomeçar
             document.getElementById('flow-reset-btn').addEventListener('click', () => {
+                loadChannel(currentChannel);
+            });
+
+            // Ouvir mudança de idioma
+            document.addEventListener('languageChanged', () => {
+                flowData = getFlowData();
                 loadChannel(currentChannel);
             });
         }
@@ -518,12 +491,17 @@
                 completedChannels.add(currentChannel);
                 updateProgress();
 
+                const successTitle = I18n.t('extras.fluxo.ui.feedback.success.title');
+                const successText = I18n.t('extras.fluxo.ui.feedback.success.text')
+                    .replace('{total}', total)
+                    .replace('{channel}', getChannelName(currentChannel));
+
                 feedback.innerHTML = `
                 <div class="highlight-box sucesso">
                     <span class="icon">🎉</span>
                     <div class="highlight-box-content">
-                        <h4>Parabéns!</h4>
-                        <p>Você acertou todos os ${total} passos do fluxo de ${getChannelName(currentChannel)}!</p>
+                        <h4>${successTitle}</h4>
+                        <p>${successText}</p>
                     </div>
                 </div>
             `;
@@ -532,12 +510,17 @@
                 // Marca tab como completa
                 document.querySelector(`.channel-tab[data-channel="${currentChannel}"]`).classList.add('completed');
             } else {
+                const errorTitle = I18n.t('extras.fluxo.ui.feedback.error.title');
+                const errorText = I18n.t('extras.fluxo.ui.feedback.error.text')
+                    .replace('{correct}', correct)
+                    .replace('{total}', total);
+
                 feedback.innerHTML = `
                 <div class="highlight-box atencao">
                     <span class="icon">⚠️</span>
                     <div class="highlight-box-content">
-                        <h4>Quase lá!</h4>
-                        <p>Você acertou ${correct} de ${total} passos. Revise os itens marcados em vermelho.</p>
+                        <h4>${errorTitle}</h4>
+                        <p>${errorText}</p>
                     </div>
                 </div>
             `;
@@ -562,12 +545,15 @@
         // Mostra mensagem de conclusão total
         function showCompletionMessage() {
             const feedback = document.getElementById('flow-feedback');
+            const compTitle = I18n.t('extras.fluxo.ui.feedback.completion.title');
+            const compText = I18n.t('extras.fluxo.ui.feedback.completion.text');
+
             feedback.innerHTML = `
             <div class="highlight-box sucesso" style="background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);">
                 <span class="icon" style="font-size: 2rem;">🏆</span>
                 <div class="highlight-box-content">
-                    <h4>Exercício Completo!</h4>
-                    <p>Parabéns! Você completou todos os 6 fluxos de atendimento com sucesso!</p>
+                    <h4>${compTitle}</h4>
+                    <p>${compText}</p>
                 </div>
             </div>
         `;
@@ -575,15 +561,7 @@
 
         // Helper para nome do canal
         function getChannelName(channel) {
-            const names = {
-                redes: 'Redes Sociais',
-                lojas: 'Lojas',
-                pessoal: 'Atendimento Pessoal',
-                site: 'Site',
-                app: 'App',
-                email: 'E-mail'
-            };
-            return names[channel] || channel;
+            return I18n.t(`extras.fluxo.channels.${channel}`);
         }
 
         // Inicializa quando o DOM estiver pronto

@@ -27,6 +27,65 @@
     },
     "ui": {
         "check_btn": "✓ Check",
-        "reset_btn": "🔄 Restart"
+        "reset_btn": "🔄 Restart",
+        "slot_placeholder": "Drag step {n} here",
+        "feedback": {
+            "success": {
+                "title": "Congratulations!",
+                "text": "You got all {total} steps of the {channel} flow right!"
+            },
+            "error": {
+                "title": "Almost there!",
+                "text": "You got {correct} out of {total} steps right. Review the items marked in red."
+            },
+            "completion": {
+                "title": "Exercise Completed!",
+                "text": "Congratulations! You have successfully completed all 6 service flows!"
+            }
+        }
+    },
+    "data": {
+        "redes": [
+            "Social Media Team monitors mentions, comments, and messages",
+            "Identifies demand and creates service in Salesforce",
+            "Directs to SAC or the Store according to the type",
+            "SAC handles the case and registers feedback in Salesforce",
+            "Social Media responds to the customer on the original channel"
+        ],
+        "lojas": [
+            "Store identifies request that requires continuity",
+            "Store registers service in Salesforce",
+            "Demand is directed to SAC",
+            "SAC analyzes and contacts internal areas",
+            "SAC ensures final feedback to the customer"
+        ],
+        "pessoal": [
+            "Customer calls through IVR or initiates intercom",
+            "Operator answers the immediate contact",
+            "Operator provides quick guidance",
+            "Opens case when necessary",
+            "Makes immediate referral according to the occurrence"
+        ],
+        "site": [
+            "Customer fills out form on the website",
+            "Case is automatically created in Salesforce",
+            "Service goes to SAC Triage",
+            "SAC classifies and directs to the responsible area",
+            "SAC provides feedback to the customer"
+        ],
+        "app": [
+            "Customer sends request via the App",
+            "Case is automatically created in Salesforce",
+            "Service goes to SAC Triage",
+            "SAC classifies and forwards when applicable",
+            "SAC provides feedback to the customer"
+        ],
+        "email": [
+            "Customer sends email to 'Contact Us'",
+            "Case is automatically registered in Salesforce",
+            "Service passes through SAC Triage",
+            "SAC identifies and classifies the type of request",
+            "SAC provides feedback to the customer"
+        ]
     }
 }
