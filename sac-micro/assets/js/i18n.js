@@ -175,9 +175,18 @@ const I18n = {
         return key.split('.').reduce((obj, k) => (obj && obj[k] !== 'undefined') ? obj[k] : null, this.translations);
     },
 
-    // Retorna uma tradução específica (para uso via JS)
-    t(key) {
-        return this.getNestedTranslation(key) || key;
+    // Retorna uma tradução específica (para uso via JS) com suporte a variáveis {{key}}
+    t(key, params = null) {
+        let translation = this.getNestedTranslation(key) || key;
+
+        if (params && typeof params === 'object') {
+            Object.keys(params).forEach(p => {
+                const regex = new RegExp(`{{${p}}}`, 'g');
+                translation = translation.replace(regex, params[p]);
+            });
+        }
+
+        return translation;
     }
 };
 
