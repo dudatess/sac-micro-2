@@ -1,19 +1,15 @@
 {
     "title": "👤 Personal Service",
-    "lead": "Personal service is provided by SAC operators in situations requiring immediate contact.",
+    "lead": "Personal service is carried out by SAC operators in inbound contact situations.",
     "situations": {
         "title": "Service Situations",
         "ura": {
-            "title": "IVR Calls",
-            "text": "Customers who call through IVRs (Interactive Voice Response) and are directed to SAC."
+            "title": "Calls transferred by electronic service",
+            "text": "Clients who call through the IVRs (Interactive Voice Response) and are directed to SAC when they select the option to speak with an attendant."
         },
         "interfone": {
             "title": "Parking Intercom",
-            "text": "Customers who use the intercom for support during their stay in the parking lot."
-        },
-        "estacionamento": {
-            "title": "Direct Support",
-            "text": "Direct support situations during the customer's stay in the parking lot."
+            "text": "Clients who activate the intercom for support at the exits of the Parking lots attended by SAC."
         }
     },
     "focus": {
@@ -25,7 +21,7 @@
     },
     "examples": {
         "title": "Forwarding Examples",
-        "text": "Ticket cancellation, machine problems, access guidance."
+        "text": "Duplicate purchase payments, access problems to apps and sites, complaints about service or product quality, among others."
     },
     "highlight": {
         "title": "Importance",
@@ -39,7 +35,7 @@
                 "b": "In-depth case analysis",
                 "c": "Agility and perception of on-site support"
             },
-            "feedback": "<strong>Correct!</strong> Personal service is essential for agility and for the customer to feel immediate support."
+            "feedback": "Correct! Personal service is essential to provide a personalized, agile, welcoming, and satisfactory approach for the client."
         }
     }
 }

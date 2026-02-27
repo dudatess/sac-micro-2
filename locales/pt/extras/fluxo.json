@@ -1,5 +1,5 @@
 {
-    "title": "🎯 Monte o Fluxo",
+    "title": "🎯 Monte o Processo",
     "lead": "Ordene os passos de cada canal de atendimento na sequência correta.",
     "instructions": {
         "title": "Como funciona",
@@ -20,7 +20,7 @@
         "label": "Progresso:"
     },
     "items": {
-        "title": "Passos do Fluxo (embaralhados):"
+        "title": "Passos do Processo (embaralhados):"
     },
     "order": {
         "title": "Ordem Correta:"
@@ -32,7 +32,7 @@
         "feedback": {
             "success": {
                 "title": "Parabéns!",
-                "text": "Você acertou todos os {total} passos do fluxo de {channel}!"
+                "text": "Você acertou todos os {total} passos do processo de {channel}!"
             },
             "error": {
                 "title": "Quase lá!",
@@ -40,7 +40,7 @@
             },
             "completion": {
                 "title": "Exercício Completo!",
-                "text": "Parabéns! Você completou todos os 6 fluxos de atendimento com sucesso!"
+                "text": "Parabéns! Você completou todos os 6 processos de atendimento com sucesso!"
             }
         }
     },
@@ -63,7 +63,7 @@
             "Cliente liga pela URA ou aciona interfone",
             "Operador atende o contato imediato",
             "Operador fornece orientação rápida",
-            "Abre caso quando necessário",
+            "Registrar o contato do cliente",
             "Faz encaminhamento imediato conforme ocorrência"
         ],
         "site": [

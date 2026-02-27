@@ -1,19 +1,15 @@
 {
     "title": "👤 Atendimento Pessoal",
-    "lead": "O atendimento pessoal é realizado pelos operadores do SAC em situações de contato imediato.",
+    "lead": "O atendimento pessoal é realizado pelos operadores do SAC em situações de contato receptivo.",
     "situations": {
         "title": "Situações de Atendimento",
         "ura": {
-            "title": "Ligações pela URA",
-            "text": "Clientes que ligam pelas URAs (Unidades de Resposta Audível) e são direcionados ao SAC."
+            "title": "Ligações transferidas pelo atendimento eletrônico",
+            "text": "Clientes que ligam através das URAs (Unidades de Resposta Audível) e são direcionados ao SAC quando selecionam a opção de falar com o atendente."
         },
         "interfone": {
             "title": "Interfone do Estacionamento",
-            "text": "Clientes que acionam o interfone para suporte durante a permanência no estacionamento."
-        },
-        "estacionamento": {
-            "title": "Suporte Direto",
-            "text": "Situações de suporte direto durante a permanência do cliente no estacionamento."
+            "text": "Clientes que acionam o interfone para suporte nas saídas dos Estacionamentos atendidos pelo SAC."
         }
     },
     "focus": {
@@ -25,11 +21,11 @@
     },
     "examples": {
         "title": "Exemplos de encaminhamentos",
-        "text": "Cancelamento de ticket, problemas com máquinas, orientações de acesso."
+        "text": "Pagamento duplicado de compras, problemas de acesso aos aplicativos e sites, reclamações sobre atendimento ou qualidade dos produtos, entre outros."
     },
     "highlight": {
         "title": "Importância",
-        "text": "É um canal essencial para a agilidade e para a percepção de suporte presencial pelo cliente."
+        "text": "É um canal essencial, pois proporciona maior agilidade e fortalece a percepção de suporte e acolhimento por parte do cliente."
     },
     "quiz": {
         "q1": {
@@ -39,7 +35,7 @@
                 "b": "Análise aprofundada do caso",
                 "c": "Agilidade e percepção de suporte presencial"
             },
-            "feedback": "<strong>Correto!</strong> O atendimento pessoal é essencial para a agilidade e para que o cliente sinta um suporte imediato."
+            "feedback": "Correto! O atendimento pessoal é essencial para proporcionarmos uma abordagem personalizada, ágil, acolhedora e satisfatória para o cliente."
         }
     }
 }

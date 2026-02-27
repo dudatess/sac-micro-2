@@ -2,7 +2,7 @@
     "title": "📱 Social Media",
     "lead": "When a customer registers a complaint or request on social media (Facebook, Instagram, Twitter/X), the service follows a specific flow.",
     "flow": {
-        "title": "Service Flow",
+        "title": "Service Process",
         "step1": {
             "title": "Monitoring",
             "text": "The Social Media team monitors all customer mentions, comments, and private messages daily."

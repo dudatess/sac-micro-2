@@ -6,7 +6,7 @@
         "text": "Ao enviar a solicitação pelo APP, um caso é criado automaticamente no sistema."
     },
     "flow": {
-        "title": "Fluxo de Atendimento",
+        "title": "Processo de Atendimento",
         "step1": {
             "title": "Envio pelo App",
             "text": "O cliente preenche o formulário no aplicativo e envia sua solicitação."
@@ -28,7 +28,7 @@
     },
     "quiz": {
         "q1": {
-            "text": "<strong>Verdadeiro ou Falso:</strong> O fluxo de atendimento pelo App é similar ao do Site, com criação automática de caso.",
+            "text": "<strong>Verdadeiro ou Falso:</strong> O Processo de Atendimento pelo App é similar ao do Site, com criação automática de caso.",
             "options": {
                 "a": "Verdadeiro",
                 "b": "Falso"

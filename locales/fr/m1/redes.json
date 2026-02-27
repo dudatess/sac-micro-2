@@ -2,7 +2,7 @@
     "title": "📱 Réseaux Sociaux",
     "lead": "Lorsqu'un client enregistre une réclamation ou une demande sur les réseaux sociaux (Facebook, Instagram, Twitter/X), le service suit un flux spécifique.",
     "flow": {
-        "title": "Flux de Service",
+        "title": "Processus de Service",
         "step1": {
             "title": "Surveillance",
             "text": "L'équipe des Réseaux Sociaux surveille quotidiennement toutes les mentions, commentaires et messages privés des clients."

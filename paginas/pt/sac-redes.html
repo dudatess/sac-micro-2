@@ -10,55 +10,63 @@
 
     <p class="lead" data-i18n="m1.redes.lead"></p>
 
-    <!-- Fluxo de Atendimento -->
+    <!-- Processo de Atendimento -->
     <h3 data-i18n="m1.redes.flow.title" style="margin-top: var(--spacing-lg);"></h3>
 
-    <div class="interactive-cards">
+    <div class="timeline-interactive">
         <!-- Etapa 1 -->
-        <div class="interactive-card" style="border-left: 4px solid #1976d2;">
-            <div class="interactive-card-header">
-                <span class="icon"
-                    style="background: #1976d2; color: white; padding: 0.3rem 0.6rem; border-radius: 50%; font-size: 0.9rem;">1</span>
-                <span data-i18n="m1.redes.flow.step1.title"></span>
-            </div>
-            <div class="interactive-card-content">
-                <p data-i18n="m1.redes.flow.step1.text"></p>
+        <div class="timeline-item" onclick="this.classList.toggle('active')">
+            <div class="timeline-marker">1</div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h4 data-i18n="m1.redes.flow.step1.title"></h4>
+                    <span class="timeline-toggle">+</span>
+                </div>
+                <div class="timeline-body">
+                    <p data-i18n="m1.redes.flow.step1.text"></p>
+                </div>
             </div>
         </div>
 
         <!-- Etapa 2 -->
-        <div class="interactive-card" style="border-left: 4px solid #1976d2;">
-            <div class="interactive-card-header">
-                <span class="icon"
-                    style="background: #1976d2; color: white; padding: 0.3rem 0.6rem; border-radius: 50%; font-size: 0.9rem;">2</span>
-                <span data-i18n="m1.redes.flow.step2.title"></span>
-            </div>
-            <div class="interactive-card-content">
-                <p data-i18n="m1.redes.flow.step2.text"></p>
+        <div class="timeline-item" onclick="this.classList.toggle('active')">
+            <div class="timeline-marker">2</div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h4 data-i18n="m1.redes.flow.step2.title"></h4>
+                    <span class="timeline-toggle">+</span>
+                </div>
+                <div class="timeline-body">
+                    <p data-i18n="m1.redes.flow.step2.text"></p>
+                </div>
             </div>
         </div>
 
         <!-- Etapa 3 -->
-        <div class="interactive-card" style="border-left: 4px solid #1976d2;">
-            <div class="interactive-card-header">
-                <span class="icon"
-                    style="background: #1976d2; color: white; padding: 0.3rem 0.6rem; border-radius: 50%; font-size: 0.9rem;">3</span>
-                <span data-i18n="m1.redes.flow.step3.title"></span>
-            </div>
-            <div class="interactive-card-content">
-                <p data-i18n="m1.redes.flow.step3.text"></p>
+        <div class="timeline-item" onclick="this.classList.toggle('active')">
+            <div class="timeline-marker">3</div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h4 data-i18n="m1.redes.flow.step3.title"></h4>
+                    <span class="timeline-toggle">+</span>
+                </div>
+                <div class="timeline-body">
+                    <p data-i18n="m1.redes.flow.step3.text"></p>
+                </div>
             </div>
         </div>
 
         <!-- Etapa 4 -->
-        <div class="interactive-card" style="border-left: 4px solid #1976d2;">
-            <div class="interactive-card-header">
-                <span class="icon"
-                    style="background: #1976d2; color: white; padding: 0.3rem 0.6rem; border-radius: 50%; font-size: 0.9rem;">4</span>
-                <span data-i18n="m1.redes.flow.step4.title"></span>
-            </div>
-            <div class="interactive-card-content">
-                <p data-i18n="m1.redes.flow.step4.text"></p>
+        <div class="timeline-item" onclick="this.classList.toggle('active')">
+            <div class="timeline-marker">4</div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h4 data-i18n="m1.redes.flow.step4.title"></h4>
+                    <span class="timeline-toggle">+</span>
+                </div>
+                <div class="timeline-body">
+                    <p data-i18n="m1.redes.flow.step4.text"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -79,7 +87,7 @@
 
         <details>
             <summary>
-                <span class="accordion-icon">🏪</span>
+                <span class="accordion-icon">🏬</span>
                 <span data-i18n="m1.redes.directions.loja.title"></span>
             </summary>
             <div class="qa-answer">
@@ -109,3 +117,159 @@
     </div>
 
 </div>
+
+<style>
+    /* Estilos para a Linha do Tempo (Processos) */
+    .timeline-interactive {
+        position: relative;
+        margin: var(--spacing-lg) 0;
+        padding-left: 30px;
+    }
+
+    .timeline-interactive::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 14px;
+        height: 100%;
+        width: 3px;
+        background: var(--border-color);
+        border-radius: 2px;
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-bottom: var(--spacing-md);
+        cursor: pointer;
+    }
+
+    .timeline-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .timeline-marker {
+        position: absolute;
+        left: -30px;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: white;
+        border: 3px solid var(--primary-color);
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.9rem;
+        z-index: 2;
+        transition: all var(--transition-fast);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-content {
+        background: white;
+        border: 2px solid var(--border-color);
+        border-radius: var(--radius-md);
+        margin-left: var(--spacing-sm);
+        transition: all var(--transition-fast);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+        overflow: hidden;
+    }
+
+    .timeline-header {
+        padding: var(--spacing-md);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fcfcfc;
+    }
+
+    .timeline-header h4 {
+        margin: 0;
+        color: var(--text-color);
+        font-size: 1.1rem;
+        transition: color var(--transition-fast);
+    }
+
+    .timeline-toggle {
+        font-size: 1.5rem;
+        color: var(--text-muted);
+        transition: transform 0.3s ease, color var(--transition-fast);
+        line-height: 1;
+        display: inline-block;
+    }
+
+    .timeline-body {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        background: white;
+        transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+        padding: 0 var(--spacing-md);
+    }
+
+    .timeline-body p {
+        margin: 0;
+        color: var(--text-color);
+        line-height: 1.5;
+    }
+
+    /* Hover e Ativo */
+    .timeline-item:hover .timeline-content {
+        border-color: rgba(211, 47, 47, 0.3);
+        /* Baseado no primary-color */
+        transform: translateX(4px);
+    }
+
+    .timeline-item:hover .timeline-marker {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(211, 47, 47, 0.2);
+    }
+
+    .timeline-item.active .timeline-marker {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .timeline-item.active .timeline-content {
+        border-color: var(--primary-color);
+    }
+
+    .timeline-item.active .timeline-header h4 {
+        color: var(--primary-color);
+    }
+
+    .timeline-item.active .timeline-toggle {
+        transform: rotate(45deg);
+        color: var(--primary-color);
+    }
+
+    .timeline-item.active .timeline-body {
+        max-height: 200px;
+        opacity: 1;
+        padding: 0 var(--spacing-md) var(--spacing-md) var(--spacing-md);
+    }
+
+    @media (max-width: 768px) {
+        .timeline-interactive {
+            padding-left: 20px;
+        }
+
+        .timeline-interactive::before {
+            left: 9px;
+        }
+
+        .timeline-marker {
+            left: -20px;
+            width: 20px;
+            height: 20px;
+            font-size: 0.7rem;
+            border-width: 2px;
+        }
+
+        .timeline-header h4 {
+            font-size: 1rem;
+        }
+    }
+</style>

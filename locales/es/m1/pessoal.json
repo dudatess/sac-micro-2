@@ -1,19 +1,15 @@
 {
     "title": "👤 Atención Personal",
-    "lead": "La atención personal es realizada por los operadores del SAC en situaciones de contacto inmediato.",
+    "lead": "La atención personal es realizada por los operadores del SAC en situaciones de contacto receptivo.",
     "situations": {
         "title": "Situaciones de Atención",
         "ura": {
-            "title": "Llamadas por IVR",
-            "text": "Clientes que llaman por IVR (Respuesta de Voz Interactiva) y son dirigidos al SAC."
+            "title": "Llamadas transferidas por atención electrónica",
+            "text": "Clientes que llaman a través de las IVR (Unidades de Respuesta Audible) y son dirigidos al SAC cuando seleccionan la opción de hablar con un asistente."
         },
         "interfone": {
             "title": "Intercomunicador del Estacionamiento",
-            "text": "Clientes que accionan el intercomunicador para soporte durante su permanencia en el estacionamiento."
-        },
-        "estacionamento": {
-            "title": "Soporte Directo",
-            "text": "Situaciones de soporte directo durante la permanencia del cliente en el estacionamiento."
+            "text": "Clientes que activan el intercomunicador para soporte en las salidas de los Estacionamientos atendidos por el SAC."
         }
     },
     "focus": {
@@ -25,7 +21,7 @@
     },
     "examples": {
         "title": "Ejemplos de envíos",
-        "text": "Cancelación de ticket, problemas con máquinas, orientaciones de acceso."
+        "text": "Pago duplicado de compras, problemas de acceso a aplicaciones y sitios web, quejas sobre la atención o calidad de los productos, entre otros."
     },
     "highlight": {
         "title": "Importancia",
@@ -39,7 +35,7 @@
                 "b": "Análisis profundo del caso",
                 "c": "Agilidad y percepción de soporte presencial"
             },
-            "feedback": "<strong>¡Correcto!</strong> La atención personal es esencial para la agilidad y para que el cliente sienta un soporte inmediato."
+            "feedback": "¡Correcto! La atención personal es esencial para proporcionar un enfoque personalizado, ágil, acogedor y satisfactorio para el cliente."
         }
     }
 }

@@ -2,7 +2,7 @@
     "hero": {
         "welcome": "Bem-Vindo ao curso",
         "title": "Canais de Comunicação SAC",
-        "subtitle": "Conheça os principais canais de atendimento e seus fluxos para oferecer uma experiência excepcional ao cliente.",
+        "subtitle": "Conheça os principais canais de atendimento e sua dinâmica de funcionamento para oferecer uma experiência excepcional ao cliente.",
         "badge": "✨ Treinamento SAC"
     },
     "stats": {
@@ -24,29 +24,19 @@
         },
         "pessoal": {
             "title": "Atendimento Pessoal",
-            "desc": "URA, interfone e suporte direto no estacionamento.",
+            "desc": "atendimento telefônico para suporte aos clientes da Cia Zaffari, Cestto Atacadista, Bourbon e Moinhos Shopping, Cartões e Cancelas de saída dos Estacionamentos.",
             "tag": "Imediato"
         },
-        "site": {
-            "title": "Site",
-            "desc": "Formulários Fale Conosco com criação automática de casos.",
-            "tag": "Online"
-        },
-        "app": {
-            "title": "App",
-            "desc": "Solicitações pelo aplicativo com acompanhamento estruturado.",
-            "tag": "Mobile"
-        },
-        "email": {
-            "title": "E-mail",
-            "desc": "Contato direto por e-mail com rastreabilidade completa.",
-            "tag": "Formal"
+        "site_app_email": {
+            "title": "Site, App e E-mail",
+            "desc": "Formulários e e-mail Fale Conosco com criação automática de casos.",
+            "tag": "Digital"
         }
     },
     "exercise": {
         "title": "Exercício",
         "flow": {
-            "title": "Monte o Fluxo",
+            "title": "Monte o Processo",
             "desc": "Ordene os passos de cada canal de atendimento na sequência correta.",
             "tag": "Prática"
         }

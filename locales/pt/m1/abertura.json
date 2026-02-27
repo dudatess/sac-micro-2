@@ -1,6 +1,6 @@
 {
   "title": "💻 Nosso Sistema",
-  "lead": "Todos os processos de atendimento que você aprenderá neste curso são realizados através do Salesforce, nossa plataforma central de gestão de relacionamento com o cliente.",
+  "lead": "Todos os processos de atendimento que você aprenderá neste curso são realizados através da Salesforce, nossa plataforma central de gestão de relacionamento com o cliente, com exceção dos atendimentos das cancelas de saída do Estacionamento, que são realizados no sistema WPS Enterprise.",
   "highlight": {
     "title": "Por que o Salesforce?",
     "text": "O Salesforce centraliza todos os atendimentos em um único lugar, garantindo rastreabilidade, padronização e agilidade no tratamento de cada demanda."

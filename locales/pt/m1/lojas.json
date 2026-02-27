@@ -1,8 +1,8 @@
 {
-    "title": "🏪 Lojas",
+    "title": "🏬 Lojas",
     "lead": "Os atendimentos iniciados diretamente nas lojas seguem um fluxo colaborativo com o SAC.",
     "flow": {
-        "title": "Fluxo de Atendimento",
+        "title": "Processo de Atendimento",
         "step1": {
             "title": "Registro na Loja",
             "text": "A loja registra o atendimento no sistema (Salesforce) sempre que identifica uma solicitação que exige continuidade, investigação ou encaminhamento para outra área."

@@ -1,5 +1,5 @@
 {
-    "title": "🎯 Arma el Flujo",
+    "title": "Arma el Proceso",
     "lead": "Ordena los pasos de cada canal de atención en la secuencia correcta.",
     "instructions": {
         "title": "Cómo funciona",
@@ -63,7 +63,7 @@
             "El cliente llama por la URA o activa el interfono",
             "El operador atiende el contacto inmediato",
             "El operador brinda orientación rápida",
-            "Abre un caso cuando es necesario",
+            "Registrar el contacto del cliente",
             "Realiza el encaminamiento inmediato según la ocurrencia"
         ],
         "site": [

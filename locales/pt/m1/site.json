@@ -1,12 +1,12 @@
 {
     "title": "🌐 Site",
-    "lead": "Quando o cliente realiza um contato pelos formulários disponíveis no site (como Fale Conosco, Sugestões ou Reclamações), o atendimento é gerado automaticamente na Salesforce.",
+    "lead": "Quando o cliente realiza contato pelos formulários de Fale Conosco disponíveis nos sites, o atendimento é gerado automaticamente na Salesforce.",
     "auto": {
         "title": "Processo Automático",
         "text": "O preenchimento do formulário cria um caso no sistema, sem necessidade de abertura manual."
     },
     "flow": {
-        "title": "Fluxo de Atendimento",
+        "title": "Processo de Atendimento",
         "step1": {
             "title": "Criação Automática",
             "text": "O cliente preenche o formulário no site e um caso é criado automaticamente na Salesforce."

@@ -1,5 +1,5 @@
 {
-    "title": "🎯 Construisez le Flux",
+    "title": "Assembler le Processus",
     "lead": "Ordonnez les étapes de chaque canal de service dans le bon ordre.",
     "instructions": {
         "title": "Comment ça marche",
@@ -63,7 +63,7 @@
             "Le client appelle par l'IVR ou active l'interphone",
             "L'opérateur répond au contact immédiat",
             "L'opérateur fournit des conseils rapides",
-            "Ouvre un dossier si nécessaire",
+            "Enregistrer le contact du client",
             "Effectue un transfert immédiat selon l'incident"
         ],
         "site": [

@@ -1,5 +1,5 @@
 {
-    "title": "🎯 Build the Flow",
+    "title": "Assemble the Process",
     "lead": "Order the steps of each service channel in the correct sequence.",
     "instructions": {
         "title": "How it works",
@@ -63,7 +63,7 @@
             "Customer calls through IVR or initiates intercom",
             "Operator answers the immediate contact",
             "Operator provides quick guidance",
-            "Opens case when necessary",
+            "Register the client's contact",
             "Makes immediate referral according to the occurrence"
         ],
         "site": [
