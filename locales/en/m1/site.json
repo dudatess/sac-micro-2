@@ -6,7 +6,7 @@
         "text": "Filling out the form creates a case in the system without the need for manual opening."
     },
     "flow": {
-        "title": "Service Flow",
+        "title": "Service Process",
         "step1": {
             "title": "Automatic Creation",
             "text": "The customer fills out the form on the website and a case is automatically created in Salesforce."
@@ -24,7 +24,7 @@
     },
     "highlight": {
         "title": "Benefit",
-        "text": "This flow ensures organization, quick handling, and complete traceability of the service."
+        "text": "This ensures organization, quick handling, and complete traceability of the service."
     },
     "quiz": {
         "q1": {

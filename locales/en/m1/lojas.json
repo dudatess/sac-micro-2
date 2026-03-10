@@ -1,8 +1,8 @@
 {
     "title": "🏬 Stores",
-    "lead": "Services initiated directly in stores follow a collaborative flow with SAC.",
+    "lead": "Services initiated directly in stores follow a collaborative process with SAC.",
     "flow": {
-        "title": "Service Flow",
+        "title": "Service Process",
         "step1": {
             "title": "Store Registration",
             "text": "The store registers the service in the system (Salesforce) whenever it identifies a request that requires follow-up, investigation, or forwarding to another area."

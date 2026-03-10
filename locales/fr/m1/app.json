@@ -6,7 +6,7 @@
         "text": "Lors de l'envoi d'une demande via l'APP, un cas est automatiquement créé dans le système."
     },
     "flow": {
-        "title": "Flux de Service",
+        "title": "Processus de Service",
         "step1": {
             "title": "Envoi par App",
             "text": "Le client remplit le formulaire dans l'application et envoie sa demande."
@@ -33,7 +33,7 @@
                 "a": "Vrai",
                 "b": "Faux"
             },
-            "feedback": "<strong>Correct !</strong> L'App et le Site génèrent tous deux des tickets automatiques dans Salesforce avec des flux similaires."
+            "feedback": "<strong>Correct !</strong> L'App et le Site génèrent tous deux des tickets automatiques dans Salesforce et passent par le triage do SAC."
         }
     }
 }

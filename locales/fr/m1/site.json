@@ -6,7 +6,7 @@
         "text": "Le remplissage du formulaire crée un cas dans le système sans nécessité d'ouverture manuelle."
     },
     "flow": {
-        "title": "Flux de Service",
+        "title": "Processus de Service",
         "step1": {
             "title": "Création Automatique",
             "text": "Le client remplit le formulaire sur le site et un cas est automatiquement créé dans Salesforce."
@@ -24,7 +24,7 @@
     },
     "highlight": {
         "title": "Avantage",
-        "text": "Ce flux garantit organisation, traitement rapide et traçabilité complète du service."
+        "text": "Cela garantit organisation, traitement rapide et traçabilité complète du service."
     },
     "quiz": {
         "q1": {

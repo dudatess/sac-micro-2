@@ -10,10 +10,54 @@
 
     <p class="lead" data-i18n="m1.abertura.lead"></p>
 
-    <!-- Imagem do Sistema -->
-    <div class="system-showcase" style="text-align: center; margin: var(--spacing-xl) 0;">
-        <img src="assets/Imagens/image.png" alt="Sistema Salesforce - Canais de Comunicação"
-            style="max-width: 100%; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
+    <!-- Diagrama Visual dos Canais -->
+    <div class="system-showcase" style="margin: var(--spacing-xl) 0;">
+        <div style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        ">
+            <!-- Linha 1 -->
+            <div
+                style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-radius: 14px; padding: 20px 12px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: transform 0.2s;">
+                <div style="font-size: 2.2rem; margin-bottom: 8px;">📱</div>
+                <div style="font-weight: 600; font-size: 0.85rem; color: #1565c0;" data-i18n="m1.abertura.grid.redes">
+                    Redes Sociais</div>
+            </div>
+            <div
+                style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-radius: 14px; padding: 20px 12px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: transform 0.2s;">
+                <div style="font-size: 2.2rem; margin-bottom: 8px;">🏬</div>
+                <div style="font-weight: 600; font-size: 0.85rem; color: #e65100;" data-i18n="m1.abertura.grid.lojas">
+                    Lojas</div>
+            </div>
+            <div
+                style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-radius: 14px; padding: 20px 12px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: transform 0.2s;">
+                <div style="font-size: 2.2rem; margin-bottom: 8px;">🤝</div>
+                <div style="font-weight: 600; font-size: 0.85rem; color: #2e7d32;" data-i18n="m1.abertura.grid.pessoal">
+                    Atendimento Pessoal</div>
+            </div>
+            <!-- Linha 2 -->
+            <div
+                style="background: linear-gradient(135deg, #f3e5f5, #e1bee7); border-radius: 14px; padding: 20px 12px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: transform 0.2s;">
+                <div style="font-size: 2.2rem; margin-bottom: 8px;">🌐</div>
+                <div style="font-weight: 600; font-size: 0.85rem; color: #7b1fa2;" data-i18n="m1.abertura.grid.site">
+                    Site</div>
+            </div>
+            <div
+                style="background: linear-gradient(135deg, #fce4ec, #f8bbd0); border-radius: 14px; padding: 20px 12px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: transform 0.2s;">
+                <div style="font-size: 2.2rem; margin-bottom: 8px;">📲</div>
+                <div style="font-weight: 600; font-size: 0.85rem; color: #c62828;" data-i18n="m1.abertura.grid.app">APP
+                </div>
+            </div>
+            <div
+                style="background: linear-gradient(135deg, #e0f7fa, #b2ebf2); border-radius: 14px; padding: 20px 12px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: transform 0.2s;">
+                <div style="font-size: 2.2rem; margin-bottom: 8px;">📧</div>
+                <div style="font-weight: 600; font-size: 0.85rem; color: #00838f;" data-i18n="m1.abertura.grid.email">
+                    E-mail</div>
+            </div>
+        </div>
     </div>
 
     <!-- Destaque -->

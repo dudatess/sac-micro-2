@@ -1,6 +1,6 @@
 {
     "title": "📱 Redes Sociales",
-    "lead": "Cuando el cliente registra una queja o solicitud en las redes sociales (Facebook, Instagram, Twitter/X), la atención sigue un flujo específico.",
+    "lead": "Cuando el cliente registra una queja o solicitud en las redes sociales (Facebook, Instagram, Twitter/X), la atención sigue un proceso específico.",
     "flow": {
         "title": "Proceso de Atención",
         "step1": {
@@ -33,7 +33,7 @@
     },
     "highlight": {
         "title": "Resultado",
-        "text": "Este flujo garantiza rapidez y estandarización en la atención realizada por redes sociales."
+        "text": "Esto garantiza rapidez y estandarización en la atención realizada por redes sociales."
     },
     "quiz": {
         "q1": {

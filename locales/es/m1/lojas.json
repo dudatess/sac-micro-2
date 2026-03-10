@@ -1,8 +1,8 @@
 {
     "title": "🏬 Tiendas",
-    "lead": "Las atenciones iniciadas directamente en las tiendas siguen un flujo colaborativo con el SAC.",
+    "lead": "Las atenciones iniciadas directamente en las tiendas siguen un proceso colaborativo con el SAC.",
     "flow": {
-        "title": "Flujo de Atención",
+        "title": "Proceso de Atención",
         "step1": {
             "title": "Registro en Tienda",
             "text": "La tienda registra la atención en el sistema (Salesforce) siempre que identifica una solicitud que requiere continuidad, investigación o envío a otra área."

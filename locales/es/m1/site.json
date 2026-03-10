@@ -6,7 +6,7 @@
         "text": "El llenado del formulario crea un caso en el sistema, sin necesidad de apertura manual."
     },
     "flow": {
-        "title": "Flujo de Atención",
+        "title": "Proceso de Atención",
         "step1": {
             "title": "Creación Automática",
             "text": "El cliente completa el formulario en el sitio y un caso se crea automáticamente en Salesforce."
@@ -24,7 +24,7 @@
     },
     "highlight": {
         "title": "Beneficio",
-        "text": "Este flujo garantiza organización, agilidad en el tratamiento y rastreabilidad completa de la atención."
+        "text": "Esto garantiza organización, agilidad en el tratamiento y rastreabilidad completa de la atención."
     },
     "quiz": {
         "q1": {

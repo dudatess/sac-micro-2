@@ -1,8 +1,8 @@
 {
     "title": "🏬 Magasins",
-    "lead": "Les services initiés directement dans les magasins suivent un flux collaboratif avec le SAC.",
+    "lead": "Les services initiés directement dans les magasins suivent un processus collaboratif avec le SAC.",
     "flow": {
-        "title": "Flux de Service",
+        "title": "Processus de Service",
         "step1": {
             "title": "Enregistrement en Magasin",
             "text": "Le magasin enregistre le service dans le système (Salesforce) chaque fois qu'il identifie une demande nécessitant un suivi, une investigation ou un transfert vers un autre service."

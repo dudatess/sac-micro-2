@@ -14,6 +14,14 @@
         "app": "App",
         "email": "Correo Electrónico"
     },
+    "grid": {
+        "redes": "Redes Sociales",
+        "lojas": "Tiendas",
+        "pessoal": "Atención Personal",
+        "site": "Sitio Web",
+        "app": "APP",
+        "email": "Correo Electrónico"
+    },
     "cta": {
         "title": "¿Listos para empezar?",
         "text": "En las próximas páginas, aprenderás cómo funciona cada canal de comunicación y cómo utilizar el sistema para garantizar la mejor experiencia al cliente."

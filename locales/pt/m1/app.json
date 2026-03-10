@@ -33,7 +33,7 @@
                 "a": "Verdadeiro",
                 "b": "Falso"
             },
-            "feedback": "<strong>Correto!</strong> Tanto o App quanto o Site geram atendimentos automáticos na Salesforce com fluxos similares."
+            "feedback": "<strong>Correto!</strong> Tanto o App quanto o Site geram atendimentos automáticos na Salesforce e passam pela triagem do SAC."
         }
     }
 }

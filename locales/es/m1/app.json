@@ -6,7 +6,7 @@
         "text": "Al enviar la solicitud por la APP, se crea automáticamente un caso en el sistema."
     },
     "flow": {
-        "title": "Flujo de Atención",
+        "title": "Proceso de Atención",
         "step1": {
             "title": "Envío por App",
             "text": "El cliente completa el formulario en la aplicación y envía su solicitud."
@@ -33,7 +33,7 @@
                 "a": "Verdadero",
                 "b": "Falso"
             },
-            "feedback": "<strong>¡Correcto!</strong> Tanto el App como el Sitio generan atenciones automáticas en Salesforce con flujos similares."
+            "feedback": "<strong>¡Correcto!</strong> Tanto el App como el Sitio generan atenciones automáticas en Salesforce y pasan por la clasificación del SAC."
         }
     }
 }

@@ -1,6 +1,6 @@
 {
     "title": "📱 Redes Sociais",
-    "lead": "Quando o cliente registra uma reclamação ou solicitação nas redes sociais (Facebook, Instagram, Twitter/X), o atendimento segue um fluxo específico.",
+    "lead": "Quando o cliente registra uma reclamação ou solicitação nas redes sociais (Facebook, Instagram, Twitter/X), o atendimento segue um processo específico.",
     "flow": {
         "title": "Processo de Atendimento",
         "step1": {
@@ -33,7 +33,7 @@
     },
     "highlight": {
         "title": "Resultado",
-        "text": "Esse fluxo garante rapidez e padronização no atendimento realizado por mídias sociais."
+        "text": "Isso garante rapidez e padronização no atendimento realizado por mídias sociais."
     },
     "quiz": {
         "q1": {

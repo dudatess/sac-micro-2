@@ -6,7 +6,7 @@
         "text": "When submitting a request through the APP, a case is automatically created in the system."
     },
     "flow": {
-        "title": "Service Flow",
+        "title": "Service Process",
         "step1": {
             "title": "App Submission",
             "text": "The customer fills out the form in the app and submits their request."
@@ -33,7 +33,7 @@
                 "a": "True",
                 "b": "False"
             },
-            "feedback": "<strong>Correct!</strong> Both the App and Website generate automatic tickets in Salesforce with similar flows."
+            "feedback": "<strong>Correct!</strong> Both the App and Website generate automatic tickets in Salesforce and go through SAC Screening."
         }
     }
 }

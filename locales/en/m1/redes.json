@@ -1,6 +1,6 @@
 {
     "title": "📱 Social Media",
-    "lead": "When a customer registers a complaint or request on social media (Facebook, Instagram, Twitter/X), the service follows a specific flow.",
+    "lead": "When a customer registers a complaint or request on social media (Facebook, Instagram, Twitter/X), the service follows a specific process.",
     "flow": {
         "title": "Service Process",
         "step1": {
@@ -33,7 +33,7 @@
     },
     "highlight": {
         "title": "Result",
-        "text": "This flow ensures speed and standardization in social media service."
+        "text": "This ensures speed and standardization in social media service."
     },
     "quiz": {
         "q1": {

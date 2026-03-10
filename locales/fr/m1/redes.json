@@ -1,6 +1,6 @@
 {
     "title": "📱 Réseaux Sociaux",
-    "lead": "Lorsqu'un client enregistre une réclamation ou une demande sur les réseaux sociaux (Facebook, Instagram, Twitter/X), le service suit un flux spécifique.",
+    "lead": "Lorsqu'un client enregistre une réclamation ou une demande sur les réseaux sociaux (Facebook, Instagram, Twitter/X), le service suit un processus spécifique.",
     "flow": {
         "title": "Processus de Service",
         "step1": {
@@ -33,7 +33,7 @@
     },
     "highlight": {
         "title": "Résultat",
-        "text": "Ce flux garantit rapidité et standardisation dans le service via les réseaux sociaux."
+        "text": "Cela garantit rapidité et standardisation dans le service via les réseaux sociaux."
     },
     "quiz": {
         "q1": {

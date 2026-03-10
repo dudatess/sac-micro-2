@@ -14,6 +14,14 @@
         "app": "App",
         "email": "Email"
     },
+    "grid": {
+        "redes": "Social Media",
+        "lojas": "Stores",
+        "pessoal": "Personal Service",
+        "site": "Website",
+        "app": "APP",
+        "email": "Email"
+    },
     "cta": {
         "title": "Ready to start?",
         "text": "In the following pages, you will learn how each communication channel works and how to use the system to ensure the best customer experience."
